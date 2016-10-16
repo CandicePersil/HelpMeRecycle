@@ -4,26 +4,17 @@ This README would normally document whatever steps are necessary to get your app
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Help_Me_Recycle version control
 
 ### How do I get set up? ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
+* Clone the code from bitbucket and setup git for it
+* You don't have to use any GUI app because PyCharm does have plugin for it but you can use SourceTree (which is recommended) for a better visual
 
-### Contribution guidelines ###
+### Things need to be checked before committing code ###
 
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+* Review your code
+* Make sure it doesn't make any error!!!
+* Remember to writing unit tests for logic functions
+* Rerun unit tests if you make any change involving logic
+* Last but not least, be careful to merge your code, don't override others!
