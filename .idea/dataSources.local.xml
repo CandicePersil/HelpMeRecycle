@@ -7,8 +7,8 @@
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <secret-storage>master_key</secret-storage>
-      <introspection-scope>hmr_db:public,pg_catalog,</introspection-scope>
-      <resolve-scope>hmr_db:public,</resolve-scope>
+      <introspection-scope>hmr_db:pg_catalog,public</introspection-scope>
+      <resolve-scope>hmr_db:public</resolve-scope>
     </data-source>
   </component>
 </project>

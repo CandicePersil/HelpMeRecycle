@@ -14,8 +14,8 @@
     <schema id="4" parent="1" name="public">
       <object-id>2200</object-id>
       <visible>1</visible>
-      <introspection-state-number>891</introspection-state-number>
-      <introspection-timestamp>2016-10-30.22:35:30.192</introspection-timestamp>
+      <introspection-state-number>922</introspection-state-number>
+      <introspection-timestamp>2016-11-06.00:03:50.979</introspection-timestamp>
     </schema>
     <schema id="5" parent="1" name="pg_catalog">
       <object-id>11</object-id>
@@ -108,570 +108,717 @@
       <object-id>16544</object-id>
       <state-number>891</state-number>
     </table>
-    <column id="29" parent="19" name="id">
+    <table id="29" parent="4" name="trash_trashbin">
+      <object-id>16591</object-id>
+      <state-number>922</state-number>
+    </table>
+    <table id="30" parent="4" name="trash_trashitem">
+      <object-id>16599</object-id>
+      <state-number>922</state-number>
+    </table>
+    <table id="31" parent="4" name="trash_trashmaterial">
+      <object-id>16607</object-id>
+      <state-number>922</state-number>
+    </table>
+    <column id="32" parent="19" name="id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;auth_group_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="30" parent="19" name="name">
+    <column id="33" parent="19" name="name">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(80)|0</data-type>
     </column>
-    <index id="31" parent="19" name="auth_group_pkey">
+    <index id="34" parent="19" name="auth_group_pkey">
       <object-id>16423</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="32" parent="19" name="auth_group_name_key">
+    <index id="35" parent="19" name="auth_group_name_key">
       <object-id>16425</object-id>
       <columns>name</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="33" parent="19" name="auth_group_name_a6ea08ec_like">
+    <index id="36" parent="19" name="auth_group_name_a6ea08ec_like">
       <object-id>16469</object-id>
       <columns>name</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="34" parent="19" name="auth_group_pkey">
+    <key id="37" parent="19" name="auth_group_pkey">
       <object-id>16424</object-id>
       <columns>id</columns>
       <underlying-index>auth_group_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="35" parent="19" name="auth_group_name_key">
+    <key id="38" parent="19" name="auth_group_name_key">
       <object-id>16426</object-id>
       <columns>name</columns>
       <underlying-index>auth_group_name_key</underlying-index>
     </key>
-    <column id="36" parent="20" name="id">
+    <column id="39" parent="20" name="id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;auth_group_permissions_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="37" parent="20" name="group_id">
+    <column id="40" parent="20" name="group_id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <column id="38" parent="20" name="permission_id">
+    <column id="41" parent="20" name="permission_id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <index id="39" parent="20" name="auth_group_permissions_pkey">
+    <index id="42" parent="20" name="auth_group_permissions_pkey">
       <object-id>16433</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="40" parent="20" name="auth_group_permissions_group_id_0cd325b0_uniq">
+    <index id="43" parent="20" name="auth_group_permissions_group_id_0cd325b0_uniq">
       <object-id>16480</object-id>
       <columns>group_id
 permission_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="41" parent="20" name="auth_group_permissions_0e939a4f">
+    <index id="44" parent="20" name="auth_group_permissions_0e939a4f">
       <object-id>16482</object-id>
       <columns>group_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <index id="42" parent="20" name="auth_group_permissions_8373b171">
+    <index id="45" parent="20" name="auth_group_permissions_8373b171">
       <object-id>16483</object-id>
       <columns>permission_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="43" parent="20" name="auth_group_permissions_pkey">
+    <key id="46" parent="20" name="auth_group_permissions_pkey">
       <object-id>16434</object-id>
       <columns>id</columns>
       <underlying-index>auth_group_permissions_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="44" parent="20" name="auth_group_permissions_group_id_0cd325b0_uniq">
+    <key id="47" parent="20" name="auth_group_permissions_group_id_0cd325b0_uniq">
       <object-id>16481</object-id>
       <columns>group_id
 permission_id</columns>
       <underlying-index>auth_group_permissions_group_id_0cd325b0_uniq</underlying-index>
     </key>
-    <foreign-key id="45" parent="20" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
+    <foreign-key id="48" parent="20" name="auth_group_permissions_group_id_b120cbf9_fk_auth_group_id">
       <object-id>16470</object-id>
       <columns>group_id</columns>
       <ref-key>~.auth_group.auth_group_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="46" parent="20" name="auth_group_permiss_permission_id_84c5c92e_fk_auth_permission_id">
+    <foreign-key id="49" parent="20" name="auth_group_permiss_permission_id_84c5c92e_fk_auth_permission_id">
       <object-id>16475</object-id>
       <columns>permission_id</columns>
       <ref-key>~.auth_permission.auth_permission_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="47" parent="21" name="id">
+    <column id="50" parent="21" name="id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;auth_permission_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="48" parent="21" name="name">
+    <column id="51" parent="21" name="name">
       <state-number>880</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="49" parent="21" name="content_type_id">
+    <column id="52" parent="21" name="content_type_id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <column id="50" parent="21" name="codename">
+    <column id="53" parent="21" name="codename">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(100)|0</data-type>
     </column>
-    <index id="51" parent="21" name="auth_permission_pkey">
+    <index id="54" parent="21" name="auth_permission_pkey">
       <object-id>16415</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="52" parent="21" name="auth_permission_content_type_id_01ab375a_uniq">
+    <index id="55" parent="21" name="auth_permission_content_type_id_01ab375a_uniq">
       <object-id>16466</object-id>
       <columns>content_type_id
 codename</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="53" parent="21" name="auth_permission_417f1b1c">
+    <index id="56" parent="21" name="auth_permission_417f1b1c">
       <object-id>16468</object-id>
       <columns>content_type_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="54" parent="21" name="auth_permission_pkey">
+    <key id="57" parent="21" name="auth_permission_pkey">
       <object-id>16416</object-id>
       <columns>id</columns>
       <underlying-index>auth_permission_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="55" parent="21" name="auth_permission_content_type_id_01ab375a_uniq">
+    <key id="58" parent="21" name="auth_permission_content_type_id_01ab375a_uniq">
       <object-id>16467</object-id>
       <columns>content_type_id
 codename</columns>
       <underlying-index>auth_permission_content_type_id_01ab375a_uniq</underlying-index>
     </key>
-    <foreign-key id="56" parent="21" name="auth_permiss_content_type_id_2f476e4b_fk_django_content_type_id">
+    <foreign-key id="59" parent="21" name="auth_permiss_content_type_id_2f476e4b_fk_django_content_type_id">
       <object-id>16461</object-id>
       <columns>content_type_id</columns>
       <ref-key>~.django_content_type.django_content_type_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="57" parent="22" name="id">
+    <column id="60" parent="22" name="id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;auth_user_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="58" parent="22" name="password">
+    <column id="61" parent="22" name="password">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(128)|0</data-type>
     </column>
-    <column id="59" parent="22" name="last_login">
+    <column id="62" parent="22" name="last_login">
       <state-number>885</state-number>
       <data-type>timestamp with time zone|0</data-type>
     </column>
-    <column id="60" parent="22" name="is_superuser">
+    <column id="63" parent="22" name="is_superuser">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>boolean|0</data-type>
     </column>
-    <column id="61" parent="22" name="username">
+    <column id="64" parent="22" name="username">
       <state-number>889</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(150)|0</data-type>
     </column>
-    <column id="62" parent="22" name="first_name">
+    <column id="65" parent="22" name="first_name">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(30)|0</data-type>
     </column>
-    <column id="63" parent="22" name="last_name">
+    <column id="66" parent="22" name="last_name">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(30)|0</data-type>
     </column>
-    <column id="64" parent="22" name="email">
+    <column id="67" parent="22" name="email">
       <state-number>882</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(254)|0</data-type>
     </column>
-    <column id="65" parent="22" name="is_staff">
+    <column id="68" parent="22" name="is_staff">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>boolean|0</data-type>
     </column>
-    <column id="66" parent="22" name="is_active">
+    <column id="69" parent="22" name="is_active">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>boolean|0</data-type>
     </column>
-    <column id="67" parent="22" name="date_joined">
+    <column id="70" parent="22" name="date_joined">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp with time zone|0</data-type>
     </column>
-    <index id="68" parent="22" name="auth_user_pkey">
+    <index id="71" parent="22" name="auth_user_pkey">
       <object-id>16441</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="69" parent="22" name="auth_user_username_key">
+    <index id="72" parent="22" name="auth_user_username_key">
       <object-id>16538</object-id>
       <columns>username</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="70" parent="22" name="auth_user_username_6821ab7c_like">
+    <index id="73" parent="22" name="auth_user_username_6821ab7c_like">
       <object-id>16540</object-id>
       <columns>username</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="71" parent="22" name="auth_user_pkey">
+    <key id="74" parent="22" name="auth_user_pkey">
       <object-id>16442</object-id>
       <columns>id</columns>
       <underlying-index>auth_user_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="72" parent="22" name="auth_user_username_key">
+    <key id="75" parent="22" name="auth_user_username_key">
       <object-id>16539</object-id>
       <columns>username</columns>
       <underlying-index>auth_user_username_key</underlying-index>
     </key>
-    <column id="73" parent="23" name="id">
+    <column id="76" parent="23" name="id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;auth_user_groups_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="74" parent="23" name="user_id">
+    <column id="77" parent="23" name="user_id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <column id="75" parent="23" name="group_id">
+    <column id="78" parent="23" name="group_id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <index id="76" parent="23" name="auth_user_groups_pkey">
+    <index id="79" parent="23" name="auth_user_groups_pkey">
       <object-id>16451</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="77" parent="23" name="auth_user_groups_user_id_94350c0c_uniq">
+    <index id="80" parent="23" name="auth_user_groups_user_id_94350c0c_uniq">
       <object-id>16495</object-id>
       <columns>user_id
 group_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="78" parent="23" name="auth_user_groups_e8701ad4">
+    <index id="81" parent="23" name="auth_user_groups_e8701ad4">
       <object-id>16497</object-id>
       <columns>user_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <index id="79" parent="23" name="auth_user_groups_0e939a4f">
+    <index id="82" parent="23" name="auth_user_groups_0e939a4f">
       <object-id>16498</object-id>
       <columns>group_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="80" parent="23" name="auth_user_groups_pkey">
+    <key id="83" parent="23" name="auth_user_groups_pkey">
       <object-id>16452</object-id>
       <columns>id</columns>
       <underlying-index>auth_user_groups_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="81" parent="23" name="auth_user_groups_user_id_94350c0c_uniq">
+    <key id="84" parent="23" name="auth_user_groups_user_id_94350c0c_uniq">
       <object-id>16496</object-id>
       <columns>user_id
 group_id</columns>
       <underlying-index>auth_user_groups_user_id_94350c0c_uniq</underlying-index>
     </key>
-    <foreign-key id="82" parent="23" name="auth_user_groups_user_id_6a12ed8b_fk_auth_user_id">
+    <foreign-key id="85" parent="23" name="auth_user_groups_user_id_6a12ed8b_fk_auth_user_id">
       <object-id>16485</object-id>
       <columns>user_id</columns>
       <ref-key>~.auth_user.auth_user_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="83" parent="23" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
+    <foreign-key id="86" parent="23" name="auth_user_groups_group_id_97559544_fk_auth_group_id">
       <object-id>16490</object-id>
       <columns>group_id</columns>
       <ref-key>~.auth_group.auth_group_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="84" parent="24" name="id">
+    <column id="87" parent="24" name="id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;auth_user_user_permissions_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="85" parent="24" name="user_id">
+    <column id="88" parent="24" name="user_id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <column id="86" parent="24" name="permission_id">
+    <column id="89" parent="24" name="permission_id">
       <state-number>872</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <index id="87" parent="24" name="auth_user_user_permissions_pkey">
+    <index id="90" parent="24" name="auth_user_user_permissions_pkey">
       <object-id>16459</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="88" parent="24" name="auth_user_user_permissions_user_id_14a6b632_uniq">
+    <index id="91" parent="24" name="auth_user_user_permissions_user_id_14a6b632_uniq">
       <object-id>16509</object-id>
       <columns>user_id
 permission_id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="89" parent="24" name="auth_user_user_permissions_e8701ad4">
+    <index id="92" parent="24" name="auth_user_user_permissions_e8701ad4">
       <object-id>16511</object-id>
       <columns>user_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <index id="90" parent="24" name="auth_user_user_permissions_8373b171">
+    <index id="93" parent="24" name="auth_user_user_permissions_8373b171">
       <object-id>16512</object-id>
       <columns>permission_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="91" parent="24" name="auth_user_user_permissions_pkey">
+    <key id="94" parent="24" name="auth_user_user_permissions_pkey">
       <object-id>16460</object-id>
       <columns>id</columns>
       <underlying-index>auth_user_user_permissions_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="92" parent="24" name="auth_user_user_permissions_user_id_14a6b632_uniq">
+    <key id="95" parent="24" name="auth_user_user_permissions_user_id_14a6b632_uniq">
       <object-id>16510</object-id>
       <columns>user_id
 permission_id</columns>
       <underlying-index>auth_user_user_permissions_user_id_14a6b632_uniq</underlying-index>
     </key>
-    <foreign-key id="93" parent="24" name="auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id">
+    <foreign-key id="96" parent="24" name="auth_user_user_permissions_user_id_a95ead1b_fk_auth_user_id">
       <object-id>16499</object-id>
       <columns>user_id</columns>
       <ref-key>~.auth_user.auth_user_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="94" parent="24" name="auth_user_user_per_permission_id_1fbb5f2c_fk_auth_permission_id">
+    <foreign-key id="97" parent="24" name="auth_user_user_per_permission_id_1fbb5f2c_fk_auth_permission_id">
       <object-id>16504</object-id>
       <columns>permission_id</columns>
       <ref-key>~.auth_permission.auth_permission_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <column id="95" parent="25" name="id">
+    <column id="98" parent="25" name="id">
       <state-number>874</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;django_admin_log_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="96" parent="25" name="action_time">
+    <column id="99" parent="25" name="action_time">
       <state-number>876</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp with time zone|0</data-type>
     </column>
-    <column id="97" parent="25" name="object_id">
+    <column id="100" parent="25" name="object_id">
       <state-number>874</state-number>
       <data-type>text|0</data-type>
     </column>
-    <column id="98" parent="25" name="object_repr">
+    <column id="101" parent="25" name="object_repr">
       <state-number>874</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(200)|0</data-type>
     </column>
-    <column id="99" parent="25" name="action_flag">
+    <column id="102" parent="25" name="action_flag">
       <state-number>874</state-number>
       <mandatory>1</mandatory>
       <data-type>smallint|0</data-type>
     </column>
-    <column id="100" parent="25" name="change_message">
+    <column id="103" parent="25" name="change_message">
       <state-number>874</state-number>
       <mandatory>1</mandatory>
       <data-type>text|0</data-type>
     </column>
-    <column id="101" parent="25" name="content_type_id">
+    <column id="104" parent="25" name="content_type_id">
       <state-number>874</state-number>
       <data-type>integer|0</data-type>
     </column>
-    <column id="102" parent="25" name="user_id">
+    <column id="105" parent="25" name="user_id">
       <state-number>874</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
     </column>
-    <index id="103" parent="25" name="django_admin_log_pkey">
+    <index id="106" parent="25" name="django_admin_log_pkey">
       <object-id>16523</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="104" parent="25" name="django_admin_log_417f1b1c">
+    <index id="107" parent="25" name="django_admin_log_417f1b1c">
       <object-id>16535</object-id>
       <columns>content_type_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <index id="105" parent="25" name="django_admin_log_e8701ad4">
+    <index id="108" parent="25" name="django_admin_log_e8701ad4">
       <object-id>16536</object-id>
       <columns>user_id</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="106" parent="25" name="django_admin_log_pkey">
+    <key id="109" parent="25" name="django_admin_log_pkey">
       <object-id>16524</object-id>
       <columns>id</columns>
       <underlying-index>django_admin_log_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <foreign-key id="107" parent="25" name="django_admin_content_type_id_c4bce8eb_fk_django_content_type_id">
+    <foreign-key id="110" parent="25" name="django_admin_content_type_id_c4bce8eb_fk_django_content_type_id">
       <object-id>16525</object-id>
       <columns>content_type_id</columns>
       <ref-key>~.django_content_type.django_content_type_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <foreign-key id="108" parent="25" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
+    <foreign-key id="111" parent="25" name="django_admin_log_user_id_c564eba6_fk_auth_user_id">
       <object-id>16530</object-id>
       <columns>user_id</columns>
       <ref-key>~.auth_user.auth_user_pkey</ref-key>
       <cascade-update-rule>restrict</cascade-update-rule>
       <cascade-delete-rule>restrict</cascade-delete-rule>
     </foreign-key>
-    <check id="109" parent="25" name="django_admin_log_action_flag_check">
+    <check id="112" parent="25" name="django_admin_log_action_flag_check">
       <object-id>16519</object-id>
       <columns>action_flag</columns>
       <predicate>action_flag &gt;= 0</predicate>
     </check>
-    <column id="110" parent="26" name="id">
+    <column id="113" parent="26" name="id">
       <state-number>870</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;django_content_type_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="111" parent="26" name="app_label">
+    <column id="114" parent="26" name="app_label">
       <state-number>870</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(100)|0</data-type>
     </column>
-    <column id="112" parent="26" name="model">
+    <column id="115" parent="26" name="model">
       <state-number>870</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(100)|0</data-type>
     </column>
-    <index id="113" parent="26" name="django_content_type_pkey">
+    <index id="116" parent="26" name="django_content_type_pkey">
       <object-id>16405</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="114" parent="26" name="django_content_type_app_label_76bd3d3b_uniq">
+    <index id="117" parent="26" name="django_content_type_app_label_76bd3d3b_uniq">
       <object-id>16407</object-id>
       <columns>app_label
 model</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="115" parent="26" name="django_content_type_pkey">
+    <key id="118" parent="26" name="django_content_type_pkey">
       <object-id>16406</object-id>
       <columns>id</columns>
       <underlying-index>django_content_type_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <key id="116" parent="26" name="django_content_type_app_label_76bd3d3b_uniq">
+    <key id="119" parent="26" name="django_content_type_app_label_76bd3d3b_uniq">
       <object-id>16408</object-id>
       <columns>app_label
 model</columns>
       <underlying-index>django_content_type_app_label_76bd3d3b_uniq</underlying-index>
     </key>
-    <column id="117" parent="27" name="id">
+    <column id="120" parent="27" name="id">
       <state-number>869</state-number>
       <mandatory>1</mandatory>
       <data-type>integer|0</data-type>
       <default-expression>nextval(&apos;django_migrations_id_seq&apos;::regclass)</default-expression>
     </column>
-    <column id="118" parent="27" name="app">
+    <column id="121" parent="27" name="app">
       <state-number>869</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="119" parent="27" name="name">
+    <column id="122" parent="27" name="name">
       <state-number>869</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(255)|0</data-type>
     </column>
-    <column id="120" parent="27" name="applied">
+    <column id="123" parent="27" name="applied">
       <state-number>869</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp with time zone|0</data-type>
     </column>
-    <index id="121" parent="27" name="django_migrations_pkey">
+    <index id="124" parent="27" name="django_migrations_pkey">
       <object-id>16397</object-id>
       <columns>id</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <key id="122" parent="27" name="django_migrations_pkey">
+    <key id="125" parent="27" name="django_migrations_pkey">
       <object-id>16398</object-id>
       <columns>id</columns>
       <underlying-index>django_migrations_pkey</underlying-index>
       <primary>1</primary>
     </key>
-    <column id="123" parent="28" name="session_key">
+    <column id="126" parent="28" name="session_key">
       <state-number>891</state-number>
       <mandatory>1</mandatory>
       <data-type>varchar(40)|0</data-type>
     </column>
-    <column id="124" parent="28" name="session_data">
+    <column id="127" parent="28" name="session_data">
       <state-number>891</state-number>
       <mandatory>1</mandatory>
       <data-type>text|0</data-type>
     </column>
-    <column id="125" parent="28" name="expire_date">
+    <column id="128" parent="28" name="expire_date">
       <state-number>891</state-number>
       <mandatory>1</mandatory>
       <data-type>timestamp with time zone|0</data-type>
     </column>
-    <index id="126" parent="28" name="django_session_pkey">
+    <index id="129" parent="28" name="django_session_pkey">
       <object-id>16550</object-id>
       <columns>session_key</columns>
       <desc-columns></desc-columns>
       <unique>1</unique>
     </index>
-    <index id="127" parent="28" name="django_session_session_key_c0390e0f_like">
+    <index id="130" parent="28" name="django_session_session_key_c0390e0f_like">
       <object-id>16553</object-id>
       <columns>session_key</columns>
       <desc-columns></desc-columns>
     </index>
-    <index id="128" parent="28" name="django_session_de54fa62">
+    <index id="131" parent="28" name="django_session_de54fa62">
       <object-id>16552</object-id>
       <columns>expire_date</columns>
       <desc-columns></desc-columns>
     </index>
-    <key id="129" parent="28" name="django_session_pkey">
+    <key id="132" parent="28" name="django_session_pkey">
       <object-id>16551</object-id>
       <columns>session_key</columns>
       <underlying-index>django_session_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="133" parent="29" name="id">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>uuid|0</data-type>
+    </column>
+    <column id="134" parent="29" name="name">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(512)|0</data-type>
+    </column>
+    <column id="135" parent="29" name="description">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(2058)|0</data-type>
+    </column>
+    <column id="136" parent="29" name="color">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(64)|0</data-type>
+    </column>
+    <column id="137" parent="29" name="created_date">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp with time zone|0</data-type>
+    </column>
+    <index id="138" parent="29" name="trash_trashbin_pkey">
+      <object-id>16597</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="139" parent="29" name="trash_trashbin_pkey">
+      <object-id>16598</object-id>
+      <columns>id</columns>
+      <underlying-index>trash_trashbin_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <column id="140" parent="30" name="id">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>uuid|0</data-type>
+    </column>
+    <column id="141" parent="30" name="name">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(512)|0</data-type>
+    </column>
+    <column id="142" parent="30" name="description">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(2058)|0</data-type>
+    </column>
+    <column id="143" parent="30" name="created_date">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp with time zone|0</data-type>
+    </column>
+    <column id="144" parent="30" name="bin_id">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>uuid|0</data-type>
+    </column>
+    <column id="145" parent="30" name="material_id">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>uuid|0</data-type>
+    </column>
+    <index id="146" parent="30" name="trash_trashitem_pkey">
+      <object-id>16605</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <index id="147" parent="30" name="trash_trashitem_66a0b15e">
+      <object-id>16620</object-id>
+      <columns>bin_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <index id="148" parent="30" name="trash_trashitem_eb4b9aaa">
+      <object-id>16621</object-id>
+      <columns>material_id</columns>
+      <desc-columns></desc-columns>
+    </index>
+    <key id="149" parent="30" name="trash_trashitem_pkey">
+      <object-id>16606</object-id>
+      <columns>id</columns>
+      <underlying-index>trash_trashitem_pkey</underlying-index>
+      <primary>1</primary>
+    </key>
+    <foreign-key id="150" parent="30" name="trash_trashitem_bin_id_bcab8865_fk_trash_trashbin_id">
+      <object-id>16615</object-id>
+      <columns>bin_id</columns>
+      <ref-key>~.trash_trashbin.trash_trashbin_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <foreign-key id="151" parent="30" name="trash_trashitem_material_id_d7df5c5c_fk_trash_trashmaterial_id">
+      <object-id>16622</object-id>
+      <columns>material_id</columns>
+      <ref-key>~.trash_trashmaterial.trash_trashmaterial_pkey</ref-key>
+      <cascade-update-rule>restrict</cascade-update-rule>
+      <cascade-delete-rule>restrict</cascade-delete-rule>
+    </foreign-key>
+    <column id="152" parent="31" name="id">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>uuid|0</data-type>
+    </column>
+    <column id="153" parent="31" name="name">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(512)|0</data-type>
+    </column>
+    <column id="154" parent="31" name="description">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>varchar(2058)|0</data-type>
+    </column>
+    <column id="155" parent="31" name="created_date">
+      <state-number>922</state-number>
+      <mandatory>1</mandatory>
+      <data-type>timestamp with time zone|0</data-type>
+    </column>
+    <index id="156" parent="31" name="trash_trashmaterial_pkey">
+      <object-id>16613</object-id>
+      <columns>id</columns>
+      <desc-columns></desc-columns>
+      <unique>1</unique>
+    </index>
+    <key id="157" parent="31" name="trash_trashmaterial_pkey">
+      <object-id>16614</object-id>
+      <columns>id</columns>
+      <underlying-index>trash_trashmaterial_pkey</underlying-index>
       <primary>1</primary>
     </key>
   </database-model>
