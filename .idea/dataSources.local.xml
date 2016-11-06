@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="hmr_db" uuid="4c9c53f5-3792-4477-9d83-1051da0cd61a">
+    <data-source name="hmr_db - hmr_db@localhost" uuid="a06b9bb9-db69-4723-9b97-a335dd4c0384">
       <database-info product="PostgreSQL" version="9.6.1" jdbc-version="4.0" driver-name="PostgreSQL Native Driver" driver-version="PostgreSQL 9.4 JDBC4 (build 1201)">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
