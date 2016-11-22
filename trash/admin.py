@@ -8,6 +8,9 @@ class TrashItemAdmin(admin.ModelAdmin):
     search_fields = ['name']
 
 
+class TrashBinAdmin(admin.ModelAdmin):
+    list_display = ("name", "description", "color")
+
 admin.site.register(TrashItem, TrashItemAdmin)
-admin.site.register(TrashBin)
+admin.site.register(TrashBin, TrashBinAdmin)
 admin.site.register(TrashMaterial)

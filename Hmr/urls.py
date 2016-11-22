@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+import trash.views
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^trash/', include('trash.urls', namespace='trash')),
+    # url(r'^trash/', include('trash.urls', namespace='trash')),
+    url(r'^$', trash.views.index, name='index'),
+    url(r'^additem/$', trash.views.AddItem.as_view(), name='additem'),
+    url(r'^bin/$', trash.views.TrashBins.as_view(), name='trashbins'),
+    url(r'^bin/(\w+)/$', trash.views.show_binitems, name='show_binitems'),  # TODO: change to bin/(\w+)
 ]

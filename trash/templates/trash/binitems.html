@@ -1,0 +1,42 @@
+{% extends "trash/base.html" %}
+{% block title %}
+    HMR - Bin
+{% endblock %}
+{% load static %}
+{% block content %}
+    <div style="margin-top:110px; padding-bottom:100px;">
+        <div class="container-fluid">
+            <div class="row row-content">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                    <div class="media">
+                        <div cla ss="media-left media-middle">
+                            <a href="">
+                                <img class="media-object crop-img" src="{% static 'trash/images/notebook.png' %}" alt="Notebook">
+                            </a>
+                        </div>
+                        <div class="media-body media-middle">
+                            <div class="media-heading"><h3>Notebook
+                                <span class="label label-success" style="margin-left:20px;">Paper</span><div style="float:right; margin-top: 10px;"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></div></h3>
+                            </div>
+                            <p style="padding-top:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed nisi a purus consectetur lobortis vitae sit amet massa. Mauris eleifend, ipsum id ultricies dignissim.</p>
+                        </div>
+                    </div>
+                    <div class="media">
+                         <div class="media-left media-middle">
+                            <a href="">
+                            <img class="media-object crop-img" src="{% static 'trash/images/notebook.png' %}" alt="Notebook">
+                            </a>
+                        </div>
+                        <div class="media-body media-middle">
+                            <div class="media-heading"><h3>Notebook
+                                <span class="label label-success" style="margin-left:20px;">Paper</span><div style="float:right; margin-top: 10px;"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></div></h3>
+                            </div>
+                            <p style="padding-top:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed nisi a purus consectetur lobortis vitae sit amet massa. Mauris eleifend, ipsum id ultricies dignissim.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}
