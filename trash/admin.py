@@ -3,7 +3,7 @@ from .models import *
 
 
 class TrashItemAdmin(admin.ModelAdmin):
-    list_display = ("name", "material", "bin", "created_date")
+    list_display = ("name", "bin", "created_date")
     list_filter = ['created_date']
     search_fields = ['name']
 

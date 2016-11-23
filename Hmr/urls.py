@@ -24,5 +24,6 @@ urlpatterns = [
     url(r'^$', trash.views.index, name='index'),
     url(r'^additem/$', trash.views.AddItem.as_view(), name='additem'),
     url(r'^bin/$', trash.views.TrashBins.as_view(), name='trashbins'),
-    url(r'^bin/(\w+)/$', trash.views.show_binitems, name='show_binitems'),  # TODO: change to bin/(\w+)
+    url(r'^bin/(\w+)/$', trash.views.show_binitems, name='show_binitems'),
+    url(r'^search/$', trash.views.search, name='search'),
 ]

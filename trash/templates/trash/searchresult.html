@@ -1,0 +1,50 @@
+{% extends "trash/base.html" %}
+{% block title %}
+    HMR - Search
+{% endblock %}
+{% load static %}
+{% block content %}
+    <div style="margin-top:110px; padding-bottom:100px;">
+    <div class="container-fluid">
+        <div class="row row-content">
+            <div class="center col-xs-12 col-sm-7 col-md-7 col-lg-5">
+                <div class="form-group has-feedback">
+                    <form method="get" action="{% url 'search' %}">
+                        <input type="search" class="form-control" name="criteria" placeholder="Search for item" style="width:100%;margin-top:20px;" value="{{ criteria }}">
+                        <i class="glyphicon glyphicon-search form-control-feedback"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                <h4>Results:</h4>
+                {% for i in items %}
+                    <div class="media">
+                     <div class="media-left media-middle">
+                        <a href="">
+                        <img class="media-object crop-img"
+                        src="{% static 'trash/images/notebook.png' %}" alt="Notebook">
+                        </a>
+                    </div>
+                    <div class="media-body media-middle">
+                        <div class="media-heading">
+                            <h3>{{ i.name }}
+                                <span class="label {{ i.bin.name }}" style="margin-left:20px;">{{ i.bin.name | capfirst }}</span>
+                                <div style="float:right; margin-top: 10px;">
+                                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                                    <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+                                </div>
+                            </h3>
+                        </div>
+                        <p style="padding-top:10px">{{ i.description }}</p>
+                    </div>
+                </div>
+                {% empty %}
+                    <span>No item matches the criteria.</span>
+                {% endfor %}
+             </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

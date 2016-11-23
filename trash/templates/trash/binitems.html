@@ -8,34 +8,32 @@
         <div class="container-fluid">
             <div class="row row-content">
                 <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-                    <div class="media">
-                        <div cla ss="media-left media-middle">
-                            <a href="">
-                                <img class="media-object crop-img" src="{% static 'trash/images/notebook.png' %}" alt="Notebook">
-                            </a>
-                        </div>
-                        <div class="media-body media-middle">
-                            <div class="media-heading"><h3>Notebook
-                                <span class="label label-success" style="margin-left:20px;">Paper</span><div style="float:right; margin-top: 10px;"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></div></h3>
-                            </div>
-                            <p style="padding-top:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed nisi a purus consectetur lobortis vitae sit amet massa. Mauris eleifend, ipsum id ultricies dignissim.</p>
-                        </div>
-                    </div>
-                    <div class="media">
+
+                    {% for i in items %}
+                        <div class="media">
                          <div class="media-left media-middle">
-                            <a href="">
+                            <a href="#">
                             <img class="media-object crop-img" src="{% static 'trash/images/notebook.png' %}" alt="Notebook">
                             </a>
                         </div>
                         <div class="media-body media-middle">
-                            <div class="media-heading"><h3>Notebook
-                                <span class="label label-success" style="margin-left:20px;">Paper</span><div style="float:right; margin-top: 10px;"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span> <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span></div></h3>
+                            <div class="media-heading">
+                                <h3>{{ i.name | capfirst }}
+                                    <span class="label {{ i.bin.name }}" style="margin-left:20px;">{{ i.bin.name | capfirst }}</span>
+                                    <div style="float:right; margin-top: 10px;">
+                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                                        <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+                                    </div>
+                                </h3>
                             </div>
-                            <p style="padding-top:10px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sed nisi a purus consectetur lobortis vitae sit amet massa. Mauris eleifend, ipsum id ultricies dignissim.</p>
+                            <p style="padding-top:10px">{{ i.description | capfirst }}</p>
                         </div>
                     </div>
-                </div>
+                    {% empty %}
+                        <span>No item available.</span>
+                    {% endfor %}
 
+                </div>
             </div>
         </div>
     </div>

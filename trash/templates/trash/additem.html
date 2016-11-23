@@ -4,11 +4,12 @@
 {% endblock %}
 
 {% block content %}
-    <div style="margin-top:110px; padding-bottom:100px;">
+    <div style="margin-top:80px; padding-bottom:100px;">
         <div class="container-fluid">
             <div class="row row-content">
                 <div class="col-xs-12 col-sm-9 col-sm-offset-2 col-md-8 col-md-offset-2">
                     <form class="form-horizontal" role="form" method="POST">
+                        {% csrf_token %}
                         <fieldset>
                             <legend>Add a new item to the database</legend>
 
@@ -22,20 +23,20 @@
                             <div class="form-group">
                                 <label for="id_description" class="col-sm-2 control-label">Description*</label>
                                 <div class="col-sm-10">
-                                    <textarea class="form-control" id="id_description" name="description" style="resize: vertical" rows="5" required></textarea>
+                                    <textarea class="form-control" id="id_description" name="description" style="resize: vertical" rows="2" maxlength="128" required></textarea>
                                 </div>
                             </div>
 
-                            <div class="form-group">
-                                <label for="id_material" class="col-sm-2 control-label">Trash material*</label>
-                                <div class="col-sm-10">
-                                    <select id="id_material" name="material" class="form-control" required>
-                                        {% for m in materials %}
-                                            <option value="{{ m.id }}">{{ m.name | capfirst }}</option>
-                                        {% endfor %}
-                                    </select>
-                                </div>
-                            </div>
+{#                            <div class="form-group">#}
+{#                                <label for="id_material" class="col-sm-2 control-label">Trash material*</label>#}
+{#                                <div class="col-sm-10">#}
+{#                                    <select id="id_material" name="material" class="form-control" required>#}
+{#                                        {% for m in materials %}#}
+{#                                            <option value="{{ m.id }}">{{ m.name | capfirst }}</option>#}
+{#                                        {% endfor %}#}
+{#                                    </select>#}
+{#                                </div>#}
+{#                            </div>#}
 
                              <div class="form-group">
                                 <label for="id_bin" class="col-sm-2 control-label">Trash bin*</label>
@@ -47,6 +48,23 @@
                                     </select>
                                 </div>
                             </div>
+
+                            <div class="form-group">
+                                <label for="id_sc_code" class="col-sm-2 control-label">Scanner code*</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="id_sc_code" name="sc_code" placeholder="Enter The Scanner Code" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="image" class="col-sm-2 control-label">Image</label>
+                                <div class="col-sm-10">
+                                    <input type="file" accept="image/*;capture=camera">
+                                </div>
+                            </div>
+
+                            {# TODO: display the input file for user on pc and display camera for user on phone #}
+
                         </fieldset>
                         <div class="form-group">
                             <div class="col-xs-12 col-sm-offset-2 col-sm-10">

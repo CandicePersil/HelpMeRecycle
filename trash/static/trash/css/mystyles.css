@@ -87,7 +87,7 @@ p {
     
 }
 .media-heading {
-    margin-left: 30px;
+
 }
 .green_box {
     background-color: rgba(26, 174, 2, 1);
@@ -164,4 +164,35 @@ p {
 }
 .none_decoration {
     text-decoration: none !important;
+}
+.center {
+    float: none;
+    margin: 0 auto;
+}
+
+.paper {
+    background-color: green;
+}
+.metal {
+    background-color: grey;
+}
+.glass {
+    background-color: skyblue;
+}
+.burnable {
+    background-color: red;
+}
+.bio {
+    background-color: brown;
+}
+.carton {
+    background-color: #ffcf3f;
+}
+.electronics {
+    background-color: orange;
+}
+
+.messages {
+    list-style-type: none;
+    text-align: center;
 }
