@@ -3,10 +3,7 @@ var takePicture = document.getElementById("take-picture");
 var canvas = document.createElement("canvas");
 var codeType = document.getElementById("code-type");
 var codeContent = document.getElementById("code-content");
-// var openUrlButton = document.getElementById("open-url");
-var pathFound='https://www.google.com/search?q=';
-var pathNotFound='https://www.google.com/search?q=not_found';
-// var pathFound ='https://www.google.com/search?q';
+var pathFound='search/?criteria=';
 
 function scan() {
   if (typeof MozActivity !== 'undefined') {
@@ -18,7 +15,6 @@ function scan() {
   takePicture.click();
 }
 
-// https://hacks.mozilla.org/2013/01/introducing-web-activities/
 function takePictureUsingWebActivity() {
   var pick = new MozActivity({
     name: "pick",
@@ -64,20 +60,9 @@ function loadImage(imgURL) {
     var t = Date.now() - t0;
     document.body.classList.remove('processing');
 
-    // if (codes.length === 0) {
-    //   // codeType.textContent = 'N/A';
-    //     window.location.href = pathNotFound;
-    //   // document.body.classList.add('not-detected');
-    //   return;
-    // }
-    //
-    // var type = codes[0][0];
-    // var data = codes[0][2];
-    //   codeContent.value = data;
-    // window.location.href = 'https://www.google.com/search?q' + data;
       if (codes.length === 0) {
           codeType.textContent = 'N/A';
-          window.location.href = 'https://www.google.com/search?q=not found'
+          window.location.href = 'search/?criteria=NOTFOUND'
           document.body.classList.add('not-detected');
           return;
       }
@@ -87,14 +72,11 @@ function loadImage(imgURL) {
       // publishing data
       codeType.textContent = type;
       codeContent.value = data;
-      // window.location.href = 'https://www.google.com/search?q='+ codeContent.value;
       window.location.href = pathFound + codeContent.value;
   };
 
   img.src = imgURL;
-  // document.body.classList.add('processing');
-  // document.body.classList.remove('not-detected');
-  // document.getElementById('info').removeAttribute('hidden');
+
 };
 
 
