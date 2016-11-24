@@ -92,8 +92,15 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'hmr_db',
-        'USER': 'admin',
+
+        # default database  username and password
+        #'USER': 'admin',
+        #'PASSWORD': '',
+
+        # input your database username and password here
+        'USER': '',
         'PASSWORD': '',
+
         'HOST': 'localhost',
         'PORT': '',
     }

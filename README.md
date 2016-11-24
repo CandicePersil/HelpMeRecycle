@@ -18,10 +18,12 @@ This README would normally document whatever steps are necessary to get your app
 * Add new Data Source as PostgreSQL. Host should be 'localhost'. Database name should be 'hmr_db'. URL should be 'jdbc:postgresql://localhost:5432/hmr_db'. 5432 is the port which you are using for PostgreSQL, may be different for each person.
 * Then try test connection. If no error, you are good to go.
 
+
 ### Things need to be checked before committing code ###
 
 * Review your code
 * Make sure it doesn't make any error!!!
 * Remember to writing unit tests for logic functions
 * Rerun unit tests if you make any change involving logic
+* Check your database USERNAME AND PASSWORD, comment it and leave the default on (in  Hmr/setting.py line 100)
 * Last but not least, be careful to merge your code, don't override others!
