@@ -16,7 +16,8 @@ COMMON_ERROR_MESSAGE = "An error has occured."
 ADD_ITEM_SUCCESSFULLY_MESSAGE = "Item has been added successfully."
 SUCCESS_CSS_TAGS = "alert alert-success"
 ERROR_CSS_TAGS = "alert alert-danger"
-
+ERROR_SCAN_TAGS = "alert alert-danger alert-dismissible"
+ERROR_SCAN = "Item could not be scanned, please try again."
 
 def index(request):
     return render(request, "trash/index.html")
@@ -63,7 +64,11 @@ def show_binitems(request, bin_name):
 
 
 def search(request):
-    if request.GET["criteria"] != "":
+
+    if request.GET["criteria"] == "NOTFOUND":
+        messages.add_message(request, messages.ERROR, ERROR_SCAN,ERROR_CSS_TAGS)
+        return HttpResponseRedirect(reverse("index"))
+    elif (request.GET["criteria"] != "") & (request.GET["criteria"] != "NOTFOUND"):
         criteria = request.GET["criteria"].lower().strip()
         result = TrashItem.objects.filter(name__contains=criteria).order_by("bin__name")
     else:
