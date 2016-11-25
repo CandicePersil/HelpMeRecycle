@@ -8,12 +8,18 @@
     <div class="container-fluid">
         <div class="row row-content">
             <div class="center col-xs-12 col-sm-7 col-md-7 col-lg-5">
-                <div class="form-group has-feedback">
-                    <form method="get" action="{% url 'search' %}">
-                        <input type="search" class="form-control" name="criteria" placeholder="Search for item" style="width:100%;margin-top:20px;" value="{{ criteria }}">
-                        <i class="glyphicon glyphicon-search form-control-feedback"></i>
-                    </form>
-                </div>
+                <div class="form-group has-feedback search_input">
+                            <form class="navbar-form" role="search" method="get" action="{% url 'search' %}">
+                                <div class="input-group" style="width:100%;">
+                                    <input type="search" class="form-control" id="criteria" name="criteria" placeholder="Search for item" style="display:inline-block;">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-success" type="submit">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
             </div>
         </div>
         <div class="row row-content">
@@ -29,7 +35,8 @@
                     </div>
                     <div class="media-body media-middle">
                         <div class="media-heading">
-                            <h3>{{ i.name }}
+                            <h3>
+                                {{ i.name | capfirst | truncatechars:16 }}
                                 <span class="label {{ i.bin.name }}" style="margin-left:20px;">{{ i.bin.name | capfirst }}</span>
                                 <div style="float:right; margin-top: 10px;">
                                     <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
@@ -37,7 +44,7 @@
                                 </div>
                             </h3>
                         </div>
-                        <p style="padding-top:10px">{{ i.description }}</p>
+                        <p style="padding-top:10px">{{ i.description | capfirst | truncatechars:64 }}</p>
                     </div>
                 </div>
                 {% empty %}

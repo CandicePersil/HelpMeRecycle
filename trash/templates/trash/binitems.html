@@ -18,7 +18,8 @@
                         </div>
                         <div class="media-body media-middle">
                             <div class="media-heading">
-                                <h3>{{ i.name | capfirst }}
+                                <h3>
+                                    {{ i.name | capfirst | truncatechars:16 }}
                                     <span class="label {{ i.bin.name }}" style="margin-left:20px;">{{ i.bin.name | capfirst }}</span>
                                     <div style="float:right; margin-top: 10px;">
                                         <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
@@ -26,7 +27,7 @@
                                     </div>
                                 </h3>
                             </div>
-                            <p style="padding-top:10px">{{ i.description | capfirst }}</p>
+                            <p style="padding-top:10px">{{ i.description | capfirst | truncatechars:64 }}</p>
                         </div>
                     </div>
                     {% empty %}

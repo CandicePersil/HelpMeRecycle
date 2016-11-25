@@ -1,12 +1,16 @@
 /* put your css code here */
-@media (min-width: 600px) {
-  .container {
-    width: 1300px;
-  }
-}
+/*@media (min-width: 600px) {*/
+  /*.container {*/
+    /*width: 1300px;*/
+  /*}*/
+/*}*/
 
-/*@media (max-width: @screen-xs-max) { 300px;}*/
-/*@media (max-width: @screen-lg-min) { 1300px;}*/
+@media screen and (min-width: 750px) {
+    .search_input {
+        width: 115%;
+        margin-left: -15px;
+    }
+}
 
 a#login:hover, a#login:focus  {
     background-color: #2c8d3a;
