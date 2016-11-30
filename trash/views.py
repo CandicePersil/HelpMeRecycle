@@ -39,7 +39,8 @@ class AddItem(View):
     def post(self, request):
         new_item = TrashItem.objects.create(name=request.POST["name"].strip(),
                                             description=request.POST["description"].strip(),
-                                            bin_id=request.POST["bin"], sc_code=request.POST["sc_code"])
+                                            bin_id=request.POST["bin"], sc_code=request.POST["sc_code"],
+                                            item_img=request.FILES["item_img"].file.read())
         new_item.save()
 
         messages.add_message(request, messages.SUCCESS, ADD_ITEM_SUCCESSFULLY_MESSAGE, extra_tags=SUCCESS_CSS_TAGS)

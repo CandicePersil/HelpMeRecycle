@@ -11,7 +11,7 @@
                 <div class="form-group has-feedback search_input">
                             <form class="navbar-form" role="search" method="get" action="{% url 'search' %}">
                                 <div class="input-group" style="width:100%;">
-                                    <input type="search" class="form-control" id="criteria" name="criteria" placeholder="Search for item" style="display:inline-block;">
+                                    <input type="search" class="form-control" id="criteria" name="criteria" placeholder="Search for item" style="display:inline-block;" value="{{ criteria }}">
                                     <div class="input-group-btn">
                                         <button class="btn btn-success" type="submit">
                                             <i class="fa fa-search" aria-hidden="true"></i>
@@ -26,27 +26,26 @@
             <div class="col-xs-12 col-sm-6 col-sm-offset-3">
                 <h4>Results:</h4>
                 {% for i in items %}
+
                     <div class="media">
-                     <div class="media-left media-middle">
-                        <a href="">
-                        <img class="media-object crop-img"
-                        src="{% static 'trash/images/notebook.png' %}" alt="Notebook">
+                        <a class="media-left" href="#">
+                            <img class="media-object crop-img" src="{% static 'trash/images/notebook.png' %}" alt="Notebook">
                         </a>
-                    </div>
-                    <div class="media-body media-middle">
-                        <div class="media-heading">
-                            <h3>
-                                {{ i.name | capfirst | truncatechars:16 }}
-                                <span class="label {{ i.bin.name }}" style="margin-left:20px;">{{ i.bin.name | capfirst }}</span>
-                                <div style="float:right; margin-top: 10px;">
-                                    <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-                                    <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
-                                </div>
-                            </h3>
+                        <div class="media-body">
+                            <div class="media-heading">
+                                <h3>
+                                    {{ i.name | capfirst | truncatechars:16 }}
+                                    <div style="float:right;">
+                                        <span class="label {{ i.bin.name }}" style="margin-right:10px;">{{ i.bin.name | capfirst }}</span>
+                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                                        <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+                                    </div>
+                                </h3>
+                            </div>
+                            <p style="margin-top: 40px">{{ i.description | capfirst | truncatechars:150 }}</p>
                         </div>
-                        <p style="padding-top:10px">{{ i.description | capfirst | truncatechars:64 }}</p>
                     </div>
-                </div>
+
                 {% empty %}
                     <span>No item matches the criteria.</span>
                 {% endfor %}

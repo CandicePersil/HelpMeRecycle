@@ -16,10 +16,11 @@ a#login:hover, a#login:focus  {
     background-color: #2c8d3a;
 }
 .crop-img{
-  max-height:200px;
-  width:110px;
-  margin: 12px;
-  border-radius: 4px;
+    max-height:200px;
+    width:110px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    border-radius: 4px;
 }
 
 .media {
@@ -83,7 +84,7 @@ p {
     font-family: 'Roboto', sans-serif;
     color: #FFF;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 28px;
 }
 
 .form-control {
