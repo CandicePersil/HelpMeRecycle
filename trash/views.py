@@ -9,6 +9,7 @@ from django.utils import timezone
 from django.core.mail import send_mail
 from django.conf import settings
 from django.utils import translation
+from django.db.models import Q
 import json
 from .models import *
 
@@ -39,8 +40,7 @@ class AddItem(View):
     def post(self, request):
         new_item = TrashItem.objects.create(name=request.POST["name"].strip(),
                                             description=request.POST["description"].strip(),
-                                            bin_id=request.POST["bin"], sc_code=request.POST["sc_code"],
-                                            item_img=request.FILES["item_img"].file.read())
+                                            bin_id=request.POST["bin"], sc_code=request.POST["sc_code"])
         new_item.save()
 
         messages.add_message(request, messages.SUCCESS, ADD_ITEM_SUCCESSFULLY_MESSAGE, extra_tags=SUCCESS_CSS_TAGS)
@@ -71,7 +71,7 @@ def search(request):
         return HttpResponseRedirect(reverse("index"))
     elif (request.GET["criteria"] != "") & (request.GET["criteria"] != NOT_FOUND_BAR_CODE):
         criteria = request.GET["criteria"].lower().strip()
-        result = TrashItem.objects.filter(name__contains=criteria).order_by("bin__name")
+        result = TrashItem.objects.filter(Q(name__contains=criteria) | Q(sc_code__contains=criteria) ).order_by("bin__name")
     else:
         result = TrashItem.objects.order_by('-created_date')[:20]
 

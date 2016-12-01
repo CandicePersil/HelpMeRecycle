@@ -5,10 +5,57 @@
   /*}*/
 /*}*/
 
+html, body {
+  min-width: 320px;
+}
+
 @media screen and (min-width: 750px) {
     .search_input {
-        width: 115%;
+        width: 113%;
+        margin-left: -12px;
+    }
+
+    #Electronics div {
+        width: 30%;
         margin-left: -15px;
+    }
+
+    #Burnable div{
+        width: 50%;
+        margin-left: -12px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .bin_title h3{
+        font-size: 20px;
+    }
+    .center div{
+        width: 38%;
+        margin: auto;
+        top: 38%
+    }
+    #Electronics div{
+        width: 50%;
+        margin-left: -10px;
+    }
+    #Burnable div{
+        width: 50%;
+        margin-left: -15px;
+    }
+
+    .media-heading h3{
+        font-size: 20px;
+    }
+    .media-heading .thumbs,.media-heading .label{
+        font-size: 15px;
+        left: -20px;
+        margin: 10px 20px;
+    }
+    .label {
+        width: 50%;
+        height: 50%;
+        font-size: 15px;
     }
 }
 
@@ -20,6 +67,7 @@ a#login:hover, a#login:focus  {
     width:110px;
     margin-top: 12px;
     margin-bottom: 12px;
+    /*margin: 12px;*/
     border-radius: 4px;
 }
 
@@ -66,7 +114,7 @@ div.col-xs-4.col-md-4 {
 }
 
 * {
-    font-family:'Roboto',sans-serif;
+    font-family: 'Graphik Web','Arial','Helvetica',sans-serif;
 }
 
 button a, button a:hover {color: #FFF;
@@ -84,7 +132,7 @@ p {
     font-family: 'Roboto', sans-serif;
     color: #FFF;
     font-weight: bold;
-    font-size: 28px;
+    font-size: 35px;
 }
 
 .form-control {
@@ -133,26 +181,26 @@ p {
     resize: both;
 }
 
-#Paper::after {
+#Paper::after, .paper {
     background-color: green;
 }
-#Metal::after {
+#Metal::after, .metal {
     background-color: grey; 
 }
-#Glass::after {
+#Glass::after, .glass {
     background-color: skyblue; 
 }
-#Burnable::after {
+#Burnable::after, .burnable {
     background-color: red; 
 }
-#Bio::after {
+#Bio::after, .bio {
     background-color: brown; 
 }
-#Carton::after {
+#Plastic::after, .plastic {
     background-color: #ffcf3f; 
 }
-#Electronics::after {
-    background-color: orange; 
+#Electronics::after, .electronics {
+    background-color: orange;
 }
 
 .parent {
@@ -175,26 +223,14 @@ p {
     margin: 0 auto;
 }
 
-.paper {
-    background-color: green;
+.bin_center div {
+    width: 40%;
+    margin: 0 auto;
+    top: 40%;
 }
-.metal {
-    background-color: grey;
-}
-.glass {
-    background-color: skyblue;
-}
-.burnable {
-    background-color: red;
-}
-.bio {
-    background-color: brown;
-}
-.carton {
-    background-color: #ffcf3f;
-}
-.electronics {
-    background-color: orange;
+
+#Electronics div {
+    width: 30%;
 }
 
 .messages {

@@ -1,0 +1,4 @@
+INSERT INTO public.trash_trashmaterial (id, name, description, created_date) VALUES ('6df88f08-e936-4a7e-89f3-c0466ee0fdb2', 'Bronze', 'bronze', '2016-11-06 00:05:17.808501 +02:00');
+INSERT INTO public.trash_trashmaterial (id, name, description, created_date) VALUES ('71799597-9a2d-41f3-9729-a2b2b524b576', 'Wood', 'wood', '2016-11-22 10:35:32.896437 +02:00');
+INSERT INTO public.trash_trashmaterial (id, name, description, created_date) VALUES ('a96f7a47-293e-40d1-ada4-bc819abf9d62', 'Plastic', 'plastic', '2016-11-22 10:35:43.737669 +02:00');
+INSERT INTO public.trash_trashmaterial (id, name, description, created_date) VALUES ('fe710014-c384-42b0-9331-c060da17a01d', 'Fabric', 'fabric', '2016-11-22 10:36:31.679734 +02:00');
