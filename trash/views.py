@@ -25,19 +25,17 @@ def index(request):
     return render(request, "trash/index.html")
 
 
-class AddItem(View):
-    def get(self, request):
-        bins = TrashBin.objects.all()
-        # materials = TrashMaterial.objects.all()
+class AddItem(View):  # Add Item page
+    def get(self, request):  # request to open the add item page
+        bins = TrashBin.objects.all()  # get all the current trash bins
 
         context = {
             "bins": bins,
-            # "materials": materials
         }
 
         return render(request, "trash/additem.html", context)
 
-    def post(self, request):
+    def post(self, request):  # request to create an item
         new_item = TrashItem.objects.create(name=request.POST["name"].strip(),
                                             description=request.POST["description"].strip(),
                                             bin_id=request.POST["bin"], sc_code=request.POST["sc_code"])
@@ -47,7 +45,7 @@ class AddItem(View):
         return HttpResponseRedirect(reverse("index"))
 
 
-class TrashBins(View):
+class TrashBins(View):  # Trash Bin page
     def get(self, request):
         return render(request, "trash/bins.html")
 
@@ -65,14 +63,17 @@ def show_binitems(request, bin_name):
         return render(request, "trash/binitems.html", {"items": items})
 
 
-def search(request):
+def search(request):  # search item by title or bar code number
     if request.GET["criteria"] == NOT_FOUND_BAR_CODE:
+        # message for not found bar code
         messages.add_message(request, messages.ERROR, ERROR_SCAN, ERROR_CSS_TAGS)
         return HttpResponseRedirect(reverse("index"))
     elif (request.GET["criteria"] != "") & (request.GET["criteria"] != NOT_FOUND_BAR_CODE):
+        # searching item
         criteria = request.GET["criteria"].lower().strip()
         result = TrashItem.objects.filter(Q(name__contains=criteria) | Q(sc_code__contains=criteria) ).order_by("bin__name")
     else:
+        # search all
         result = TrashItem.objects.order_by('-created_date')[:20]
 
     context = {

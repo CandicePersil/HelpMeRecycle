@@ -38,6 +38,7 @@ class TrashItem(models.Model):
     name = models.CharField(max_length=512)
     description = models.CharField(max_length=2058)
     material = models.ForeignKey(TrashMaterial, null=True, blank=True, on_delete=models.CASCADE)
+    # a bin field referred to trash bin table
     bin = models.ForeignKey(TrashBin, default=None, on_delete=models.CASCADE)
     created_date = models.DateTimeField(auto_now_add=True)
     # scan code

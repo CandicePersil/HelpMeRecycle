@@ -37,6 +37,7 @@ takePicture.onchange = function (event) {
 }
 
 function loadImage(imgURL) {
+    // process the user taken picture
   // clean
   codeType.textContent = '';
   codeContent.value = '';
@@ -77,7 +78,7 @@ function loadImage(imgURL) {
 
   img.src = imgURL;
 
-};
+}
 
 
 

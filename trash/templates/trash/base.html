@@ -50,26 +50,27 @@
 
     {% block content %}
     {% endblock %}
-
+    {# Footer part #}
+    {# Contains 3 buttons #}
     <footer>
         <div class="row row-content">
             <div class="navbar-fixed-bottom">
                 <div class="col-xs-4 col-md-4">
-                    <a href="{% url 'additem' %}">
+                    <a href="{% url 'additem' %}">  {# go to the add item page #}
                         <button type="button" class="btn btn-success btn-lg bottom-btn">
                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                         </button>
                     </a>
                 </div>
                 <div class="col-xs-4 col-md-4">
-                    <a href="{% url 'index' %}">
+                    <a href="{% url 'index' %}">  {# home page #}
                         <button type="button" class="btn btn-success btn-lg bottom-btn">
                             <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                         </button>
                     </a>
                 </div>
                 <div class="col-xs-4 col-md-4">
-                    <a href="{% url 'trashbins' %}">
+                    <a href="{% url 'trashbins' %}">  {# trash bin page #}
                         <button type="button" class="btn btn-success btn-lg bottom-btn">
                             <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
                         </button>
