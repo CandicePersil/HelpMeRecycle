@@ -1,0 +1,76 @@
+{% extends "trash/base.html" %}
+{% block title %}
+    HMR - Map
+{% endblock %}
+
+{% block content %}
+    <div style="">
+        <div class="container-fluid">
+            <div class="row row-content">
+
+                <div id="map" style="width:100%; height:600px"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function myMap() {
+            /* initialize the map */
+            var mapCanvas = document.getElementById("map");
+            var mapOptions = {
+                center: new google.maps.LatLng(60.4534621,22.2771265),
+                zoom: 14,
+                mapTypeId: 'terrain'
+            };
+            var map = new google.maps.Map(mapCanvas, mapOptions);
+
+            // get current location
+            var infoWindow = new google.maps.InfoWindow({map: map});
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function (position) {
+                    var pos = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude
+                    };
+
+                    infoWindow.setPosition(pos);
+                    infoWindow.setContent('You are here');
+                    map.setCenter(pos);
+                }, function() {
+                    handleLocationError(true, infoWindow, map.getCenter());
+                });
+            } else {
+                // Browser doesn't support Geolocation
+                handleLocationError(false, infoWindow, map.getCenter());
+            }
+
+            /* put marker of trash bins on the map */
+            var temp = "{{ data }}".replace(/&quot;/g,"\"");
+            var data = JSON.parse(temp);
+
+            if (data['features'] != null && data['features'].length > 0) {
+                var EPSG3067 = "+proj=utm +zone=35 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs";
+                var EPSG4326 = "EPSG:4326";
+
+                $.each(data['features'], function(key, value) {
+                    // convert coordinate from ETRS89-TM35FIN (3067) to the global WGS84 (4326)
+                    var coordinate = proj4(EPSG3067, EPSG4326, [value['geometry']['coordinates'][0], value['geometry']['coordinates'][1]]);
+                    var latLng = new google.maps.LatLng(coordinate[1], coordinate[0]);
+                    var marker = new google.maps.Marker({
+                        position: latLng,
+                        map: map
+                    });
+                });
+            }
+        }
+
+        function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+            infoWindow.setPosition(pos);
+            infoWindow.setContent(browserHasGeolocation ?
+                                  'Cannot find your location' :
+                                  'Error: Your browser doesn\'t support geolocation.');
+        }
+    </script>
+
+{% endblock %}

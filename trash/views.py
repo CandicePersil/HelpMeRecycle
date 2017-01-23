@@ -11,6 +11,7 @@ from django.conf import settings
 from django.utils import translation
 from django.db.models import Q
 import json
+import requests
 from .models import *
 
 COMMON_ERROR_MESSAGE = "An error has occured."
@@ -83,3 +84,15 @@ def search(request):  # search item by title or bar code number
 
     return render(request, "trash/searchresult.html", context)
 
+
+def openmap(request):  # open map page
+    # get the coordinates list from opendata
+    r = requests.get("http://opendata.lounaistieto.fi/aineistoja/Roskikset_geojson.geojson")
+    if r.status_code != 404:
+        data = r.json()
+    else:
+        # in case it is failed, use the local file
+        with open('trash/static/trash/json/Roskikset_geojson.geojson') as f:
+            data = json.load(f)
+
+    return render(request, "trash/maps.html", {"data": json.dumps(data)})
