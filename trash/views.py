@@ -14,7 +14,7 @@ import json
 import requests
 from .models import *
 
-COMMON_ERROR_MESSAGE = "An error has occured."
+COMMON_ERROR_MESSAGE = "An error has occurred."
 ADD_ITEM_SUCCESSFULLY_MESSAGE = "Item has been added successfully."
 SUCCESS_CSS_TAGS = "alert alert-success"
 ERROR_CSS_TAGS = "alert alert-danger"
@@ -73,6 +73,15 @@ def search(request):  # search item by title or bar code number
         # searching item
         criteria = request.GET["criteria"].lower().strip()
         result = TrashItem.objects.filter(Q(name__contains=criteria) | Q(sc_code__contains=criteria) ).order_by("bin__name")
+        # if the scanned number was not found go directly to the add page and show a message there
+        if((criteria[:4]=="yolo") & (not result.count())):
+            criteria = criteria[4:]
+            context = {
+                "scanner": criteria,
+            }
+            return render(request, "trash/additem.html", context)
+
+
     else:
         # search all
         result = TrashItem.objects.order_by('-created_date')[:20]
