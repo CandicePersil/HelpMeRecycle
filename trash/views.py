@@ -10,6 +10,7 @@ from django.core.mail import send_mail
 from django.conf import settings
 from django.utils import translation
 from django.db.models import Q
+import os
 import json
 import requests
 from .models import *
@@ -92,7 +93,9 @@ def openmap(request):  # open map page
         data = r.json()
     else:
         # in case it is failed, use the local file
-        with open('trash/static/trash/json/Roskikset_geojson.geojson') as f:
+        my_dir = os.path.dirname(__file__)
+        path = os.path.join(my_dir, 'static/trash/json/Roskikset_geojson.geojson')
+        with open(path) as f:
             data = json.load(f)
 
     return render(request, "trash/maps.html", {"data": json.dumps(data)})
