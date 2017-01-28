@@ -30,9 +30,15 @@ class AddItem(View):  # Add Item page
     def get(self, request):  # request to open the add item page
         bins = TrashBin.objects.all()  # get all the current trash bins
 
-        context = {
-            "bins": bins,
-        }
+        if request.method == 'GET' and 'scnf' in request.GET:
+            context = {
+                "scanner": request.GET["scnf"],
+                "bins": bins,
+            }
+        else:
+            context = {
+                "bins": bins,
+            }
 
         return render(request, "trash/additem.html", context)
 
@@ -72,15 +78,18 @@ def search(request):  # search item by title or bar code number
     elif (request.GET["criteria"] != "") & (request.GET["criteria"] != NOT_FOUND_BAR_CODE):
         # searching item
         criteria = request.GET["criteria"].lower().strip()
-        result = TrashItem.objects.filter(Q(name__contains=criteria) | Q(sc_code__contains=criteria) ).order_by("bin__name")
+        if(criteria[:4]=="yolo"):
+            result = TrashItem.objects.filter(Q(name__contains=criteria[4:]) | Q(sc_code__contains=criteria[4:])).order_by(
+                "bin__name")
+        else:
+            result = TrashItem.objects.filter(Q(name__contains=criteria) | Q(sc_code__contains=criteria)).order_by("bin__name")
         # if the scanned number was not found go directly to the add page and show a message there
         if((criteria[:4]=="yolo") & (not result.count())):
             criteria = criteria[4:]
-            context = {
-                "scanner": criteria,
-            }
-            return render(request, "trash/additem.html", context)
+            return HttpResponseRedirect("/additem/?scnf="+criteria)
 
+        elif((criteria[:4]=="yolo") & (result.count())):
+            criteria = criteria[4:]
 
     else:
         # search all
@@ -90,6 +99,8 @@ def search(request):  # search item by title or bar code number
         "items": result,
         "criteria": request.GET["criteria"].lower().strip()
     }
+
+
 
     return render(request, "trash/searchresult.html", context)
 

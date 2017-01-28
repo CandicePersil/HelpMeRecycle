@@ -3,7 +3,7 @@ var takePicture = document.getElementById("take-picture");
 var canvas = document.createElement("canvas");
 var codeType = document.getElementById("code-type");
 var codeContent = document.getElementById("code-content");
-var pathFound='search/?criteria=';
+var pathFound='search/?criteria=yolo';
 
 function scan() {
   if (typeof MozActivity !== 'undefined') {
