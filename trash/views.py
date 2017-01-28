@@ -79,17 +79,17 @@ def search(request):  # search item by title or bar code number
     elif (request.GET["criteria"] != "") & (request.GET["criteria"] != NOT_FOUND_BAR_CODE):
         # searching item
         criteria = request.GET["criteria"].lower().strip()
-        if(criteria[:4]=="yolo"):
+        if(criteria[:4]=="scnr"):
             result = TrashItem.objects.filter(Q(name__contains=criteria[4:]) | Q(sc_code__contains=criteria[4:])).order_by(
                 "bin__name")
         else:
             result = TrashItem.objects.filter(Q(name__contains=criteria) | Q(sc_code__contains=criteria)).order_by("bin__name")
         # if the scanned number was not found go directly to the add page and show a message there
-        if((criteria[:4]=="yolo") & (not result.count())):
+        if((criteria[:4]=="scnr") & (not result.count())):
             criteria = criteria[4:]
             return HttpResponseRedirect("/additem/?scnf="+criteria)
 
-        elif((criteria[:4]=="yolo") & (result.count())):
+        elif((criteria[:4]=="scnr") & (result.count())):
             criteria = criteria[4:]
 
     else:
