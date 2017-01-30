@@ -109,7 +109,7 @@ def search(request):  # search item by title or bar code number
 def openmap(request):  # open map page
     # get the coordinates list from opendata
     r = requests.get("http://opendata.lounaistieto.fi/aineistoja/Roskikset_geojson.geojson")
-    if r.status_code != 404:
+    if r.status_code != 404 and r.status_code != 403:
         data = r.json()
     else:
         # in case it is failed, use the local file
