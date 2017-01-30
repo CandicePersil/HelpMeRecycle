@@ -82,3 +82,9 @@ def search(request):
 
     return render(request, "trash/searchresult.html", context)
 
+class AboutUs(View):
+    def get(self, request):
+        return render(request, "trash/aboutus.html")
+
+    def post(self, request):
+        pass

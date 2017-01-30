@@ -38,8 +38,12 @@
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a id="login" href="#">
+                        <li><a class="nav_right_link" id="login"  href="{% url 'index' %}">
                             <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                        </li>
+
+                        <li><a class="nav_right_link" id="aboutus"  href="{% url 'aboutus' %}">
+                            <span class="glyphicon glyphicon-info-sign"></span> About us</a>
                         </li>
                     </ul>
                 </div><!-- / un-collapsed navbar-->

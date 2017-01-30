@@ -7,7 +7,23 @@
     <div style="margin-top:110px; padding-bottom:100px;">
         <div class="container-fluid">
             <div class="row row-content">
-                <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                <div class="col-xs-4 col-sm-4 col-sm-offset-2 col-md-4 col-lg-2 col-lg-offset-3">
+                    <a href="{% url 'show_binitems' 'paper' %}"><div class="round bin_center" id="Paper">
+                        <div class="bin_title"><h3>Paper</h3></div>
+                    </div></a>
+                </div>
+                <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                    <p>
+                        <strong>General color in Finland:</strong> Blue <br>
+                        <strong>Where bin generally found:</strong> Near houses <br>
+                        <strong>State of items:</strong> Dry and clean<br>
+                        <strong>Items included: </strong> Newspaper, magazines, advertisements, flyers, envelopes, etc.<br>
+                        <strong>Items not included: </strong> Wet and very dirty paper<br>
+                    </p>
+                </div>
+            </div>
+            <div class="row row-content">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
 
                     {% for i in items %}
 
