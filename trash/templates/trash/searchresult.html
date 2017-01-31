@@ -31,7 +31,7 @@
 
                     <div class="media">
                         <a class="media-left" href="#">
-                            <img class="media-object crop-img" src="{% static 'trash/images/notebook.png' %}" alt="Notebook">
+                            <img class="media-object crop-img" src="{% static 'trash/images/' %}{{ i.bin.name }}.png" alt="{{ i.bin.name }}">
                         </a>
                         <div class="media-body">
                             <div class="media-heading">

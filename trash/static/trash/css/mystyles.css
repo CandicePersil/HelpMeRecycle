@@ -30,7 +30,7 @@ html, body {
     .bin_title h3{
         font-size: 20px;
     }
-    .center div{
+    .bin_center div{
         width: 38%;
         margin: auto;
         top: 38%
@@ -47,21 +47,7 @@ html, body {
     }
     #Burnable div{
         width: 50%;
-        margin-left: -15px;
-    }
-
-    .media-heading h3{
-        font-size: 20px;
-    }
-    .media-heading .thumbs,.media-heading .label{
-        font-size: 15px;
-        left: -20px;
-        margin: 10px 20px;
-    }
-    .label {
-        width: 50%;
-        height: 50%;
-        font-size: 15px;
+        margin-left: -11px;
     }
 }
 
@@ -243,6 +229,7 @@ p {
 
 #Electronics div {
     width: 30%;
+    font-size: 1em;
 }
 
 .messages {

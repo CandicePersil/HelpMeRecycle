@@ -10,6 +10,7 @@
     <title>{% block title %}{% endblock %}</title>
         <!-- Bootstrap -->
     {% load static %}
+    <script src="{% static 'trash/js/jquery-3.1.1.min.js' %}"></script>
     <link href="{% static 'trash/bower_components/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
     <link href="{% static 'trash/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'trash/css/bootstrap-social.css' %}" rel="stylesheet">
@@ -54,26 +55,27 @@
 
     {% block content %}
     {% endblock %}
-
+    {# Footer part #}
+    {# Contains 3 buttons #}
     <footer>
         <div class="row row-content">
             <div class="navbar-fixed-bottom">
                 <div class="col-xs-4 col-md-4">
-                    <a href="{% url 'additem' %}">
+                    <a href="{% url 'additem' %}">  {# go to the add item page #}
                         <button type="button" class="btn btn-success btn-lg bottom-btn">
                             <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                         </button>
                     </a>
                 </div>
                 <div class="col-xs-4 col-md-4">
-                    <a href="{% url 'index' %}">
+                    <a href="{% url 'index' %}">  {# home page #}
                         <button type="button" class="btn btn-success btn-lg bottom-btn">
                             <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
                         </button>
                     </a>
                 </div>
                 <div class="col-xs-4 col-md-4">
-                    <a href="{% url 'trashbins' %}">
+                    <a href="{% url 'trashbins' %}">  {# trash bin page #}
                         <button type="button" class="btn btn-success btn-lg bottom-btn">
                             <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span>
                         </button>
@@ -84,8 +86,8 @@
     </footer>
 
     {% load static %}
-    <script src="{% static 'trash/js/jquery-3.1.1.min.js' %}"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.3.15/proj4-src.js"></script>
     <script src="{% static 'trash/js/cake.js' %}"></script>
     <script src="{% static 'trash/js/cake_calculate.js' %}"></script>
 </body>

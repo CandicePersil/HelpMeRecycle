@@ -25,11 +25,15 @@
             <div class="row row-content">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
 
+                    <a href="{% url 'openmap' %}">
+                        <button type="button" class="btn btn-success btn-lg">Bins map</button>
+                    </a>
+
                     {% for i in items %}
 
                         <div class="media">
                             <a class="media-left" href="#">
-                                <img class="media-object crop-img" src="{% static 'trash/images/notebook.png' %}" alt="Notebook">
+                                <img class="media-object crop-img" src="{% static 'trash/images/' %}{{ i.bin.name }}.png" alt="{{ i.bin.name }}">
                             </a>
                             <div class="media-body">
                                 <div class="media-heading">

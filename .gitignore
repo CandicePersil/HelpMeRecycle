@@ -1,5 +1,6 @@
 # Created by .ignore support plugin (hsz.mobi)
-.idea/workspace.xml
+.idea
 Hmr/settings.py
-trash/migrations/__pycache__/0008_auto_20161130_2252.cpython-35.pyc
-trash/migrations/__pycache__/0009_auto_20161130_2302.cpython-35.pyc
+trash/migrations/__pycache__
+trash/__pycache__
+Hmr/__pycache__

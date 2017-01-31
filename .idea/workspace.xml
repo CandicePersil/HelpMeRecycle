@@ -2,18 +2,369 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="475899d2-433a-42a9-a0ca-9a00bb29a9e0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trash/templates/trash/aboutus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trash/static/trash/images/bio.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trash/static/trash/images/burnable.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trash/static/trash/images/electronics.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trash/static/trash/images/glass.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trash/static/trash/images/metal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trash/static/trash/images/paper.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trash/static/trash/images/plastic.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/bin/python" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/bin/python3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/t32.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/t64.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/w32.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/w64.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/cli-32.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/cli-64.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/cli-arm-32.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/cli.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/gui-32.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/gui-64.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/gui-arm-32.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/gui.exe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/requirements.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trash/static/trash/json/Roskikset_geojson.geojson" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/trash/templates/trash/maps.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/bin/activate" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/bin/activate.csh" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/bin/activate.fish" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/bin/easy_install" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/bin/easy_install-3.5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/bin/pip" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/bin/pip3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/bin/pip3.5" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/easy_install.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip-8.1.1.dist-info/DESCRIPTION.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip-8.1.1.dist-info/INSTALLER" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip-8.1.1.dist-info/METADATA" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip-8.1.1.dist-info/RECORD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip-8.1.1.dist-info/WHEEL" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip-8.1.1.dist-info/entry_points.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip-8.1.1.dist-info/metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip-8.1.1.dist-info/top_level.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/__main__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/_markerlib/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/_markerlib/markers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/_cmd.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/adapter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/cache.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/caches/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/caches/file_cache.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/caches/redis_cache.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/controller.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/filewrapper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/heuristics.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/serialize.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/cachecontrol/wrapper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/colorama/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/colorama/ansi.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/colorama/ansitowin32.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/colorama/initialise.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/colorama/win32.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/colorama/winterm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/_backport/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/_backport/misc.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/_backport/shutil.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/_backport/sysconfig.cfg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/_backport/sysconfig.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/_backport/tarfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/database.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/index.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/locators.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/manifest.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/markers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/metadata.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/resources.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/scripts.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/util.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/version.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/distlib/wheel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/filters/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/filters/_base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/filters/alphabeticalattributes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/filters/inject_meta_charset.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/filters/lint.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/filters/optionaltags.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/filters/sanitizer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/filters/whitespace.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/html5parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/ihatexml.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/inputstream.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/sanitizer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/serializer/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/serializer/htmlserializer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/tokenizer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treeadapters/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treeadapters/sax.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treebuilders/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treebuilders/_base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treebuilders/dom.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treebuilders/etree.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treebuilders/etree_lxml.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treewalkers/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treewalkers/_base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treewalkers/dom.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treewalkers/etree.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treewalkers/genshistream.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treewalkers/lxmletree.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/treewalkers/pulldom.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/trie/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/trie/_base.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/trie/datrie.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/trie/py.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/html5lib/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/ipaddress.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/lockfile/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/lockfile/linklockfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/lockfile/mkdirlockfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/lockfile/pidlockfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/lockfile/sqlitelockfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/lockfile/symlinklockfile.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/packaging/__about__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/packaging/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/packaging/_compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/packaging/_structures.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/packaging/markers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/packaging/requirements.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/packaging/specifiers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/packaging/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/packaging/version.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/pkg_resources/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/progress/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/progress/bar.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/progress/counter.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/progress/helpers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/progress/spinner.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/pyparsing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/re-vendor.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/adapters.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/api.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/auth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/cacert.pem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/certs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/cookies.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/hooks.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/models.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/big5freq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/big5prober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/chardetect.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/chardistribution.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/charsetgroupprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/charsetprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/codingstatemachine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/cp949prober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/escprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/escsm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/eucjpprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/euckrfreq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/euckrprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/euctwfreq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/euctwprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/gb2312freq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/gb2312prober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/hebrewprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/jisfreq.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/jpcntx.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/langbulgarianmodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/langcyrillicmodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/langgreekmodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/langhebrewmodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/langhungarianmodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/langthaimodel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/latin1prober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/mbcharsetprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/mbcsgroupprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/mbcssm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/sbcharsetprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/sbcsgroupprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/sjisprober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/universaldetector.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/chardet/utf8prober.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/_collections.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/connection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/connectionpool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/contrib/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/contrib/appengine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/contrib/ntlmpool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/contrib/pyopenssl.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/fields.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/filepost.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/packages/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/packages/ordered_dict.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/packages/six.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/packages/ssl_match_hostname/_implementation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/poolmanager.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/request.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/response.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/util/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/util/connection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/util/request.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/util/response.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/util/retry.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/util/ssl_.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/util/timeout.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/packages/urllib3/util/url.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/sessions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/status_codes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/structures.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/requests/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/retrying.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/_vendor/six.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/basecommand.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/baseparser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/cmdoptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/completion.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/download.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/freeze.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/hash.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/help.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/install.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/list.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/search.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/show.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/uninstall.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/commands/wheel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/compat/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/compat/dictconfig.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/compat/ordereddict.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/download.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/exceptions.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/index.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/locations.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/models/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/models/index.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/operations/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/operations/freeze.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/pep425tags.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/req/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/req/req_file.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/req/req_install.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/req/req_set.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/req/req_uninstall.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/status_codes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/utils/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/utils/appdirs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/utils/build.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/utils/deprecation.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/utils/encoding.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/utils/filesystem.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/utils/hashes.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/utils/logging.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/utils/outdated.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/utils/setuptools_build.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/utils/ui.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/vcs/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/vcs/bazaar.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/vcs/git.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/vcs/mercurial.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/vcs/subversion.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pip/wheel.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/__about__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/_compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/_structures.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/markers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/requirements.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/specifiers.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/packaging/version.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/pyparsing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/_vendor/six.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/pkg_resources/extern/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools-20.10.1.dist-info/DESCRIPTION.rst" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools-20.10.1.dist-info/INSTALLER" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools-20.10.1.dist-info/METADATA" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools-20.10.1.dist-info/RECORD" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools-20.10.1.dist-info/WHEEL" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools-20.10.1.dist-info/dependency_links.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools-20.10.1.dist-info/entry_points.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools-20.10.1.dist-info/metadata.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools-20.10.1.dist-info/top_level.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools-20.10.1.dist-info/zip-safe" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/archive_util.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/alias.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/bdist_egg.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/bdist_rpm.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/bdist_wininst.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/build_ext.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/build_py.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/develop.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/easy_install.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/egg_info.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/install.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/install_egg_info.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/install_lib.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/install_scripts.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/launcher manifest.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/register.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/rotate.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/saveopts.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/sdist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/setopt.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/upload.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/command/upload_docs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/depends.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/dist.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/extension.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/extern/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/launch.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/lib2to3_ex.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/msvc9_support.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/package_index.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/py26compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/py27compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/py31compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/sandbox.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/script (dev).tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/script.tmpl" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/site-patch.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/ssl_support.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/unicode_utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/utils.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/version.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/lib/python3.5/site-packages/setuptools/windows_support.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/virtvenv/pyvenv.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Hmr.iml" afterPath="$PROJECT_DIR$/.idea/Hmr.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/4c9c53f5-3792-4477-9d83-1051da0cd61a.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/4c9c53f5-3792-4477-9d83-1051da0cd61a.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Hmr/urls.py" afterPath="$PROJECT_DIR$/Hmr/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dump_db/insert/hmr_db_public_trash_trashitem.sql" afterPath="$PROJECT_DIR$/dump_db/insert/hmr_db_public_trash_trashitem.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trash/models.py" afterPath="$PROJECT_DIR$/trash/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trash/static/trash/css/mystyles.css" afterPath="$PROJECT_DIR$/trash/static/trash/css/mystyles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trash/static/trash/js/cake.js" afterPath="$PROJECT_DIR$/trash/static/trash/js/cake.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trash/templates/trash/additem.html" afterPath="$PROJECT_DIR$/trash/templates/trash/additem.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trash/templates/trash/base.html" afterPath="$PROJECT_DIR$/trash/templates/trash/base.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trash/templates/trash/binitems.html" afterPath="$PROJECT_DIR$/trash/templates/trash/binitems.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trash/templates/trash/index.html" afterPath="$PROJECT_DIR$/trash/templates/trash/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trash/templates/trash/searchresult.html" afterPath="$PROJECT_DIR$/trash/templates/trash/searchresult.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trash/views.py" afterPath="$PROJECT_DIR$/trash/views.py" />
     </list>
@@ -41,10 +392,8 @@
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
   </component>
-  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" module-name="Hmr" is-module-sdk="true">
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-    <option name="myUseModuleSdk" value="true" />
-    <option name="myModuleName" value="Hmr" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -52,43 +401,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="additem.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trash/templates/trash/additem.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="mystyles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trash/static/trash/css/mystyles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="244" column="15" lean-forward="false" selection-start-line="244" selection-start-column="15" selection-end-line="244" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="aboutus.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trash/templates/trash/aboutus.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="78" lean-forward="false" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
-              <folding>
-                <element signature="e#114#160#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trash/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/trash/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1110">
-              <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+            <state relative-caret-position="435">
+              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -97,8 +424,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Hmr/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="26" column="67" lean-forward="false" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+            <state relative-caret-position="210">
+              <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding>
                 <element signature="e#637#678#0" expanded="true" />
               </folding>
@@ -106,24 +433,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="searchresult.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trash/templates/trash/searchresult.html">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/trash/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+            <state relative-caret-position="166">
+              <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maps.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/trash/templates/trash/maps.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="additem.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trash/templates/trash/additem.html">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Hmr/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="87" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="87" />
-              <folding>
-                <element signature="e#114#160#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="1935">
+              <caret line="129" column="53" lean-forward="false" selection-start-line="129" selection-start-column="53" selection-end-line="129" selection-end-column="53" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,28 +468,8 @@
       <file leaf-file-name="base.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/trash/templates/trash/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="44" column="89" lean-forward="false" selection-start-line="44" selection-start-column="89" selection-end-line="44" selection-end-column="89" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="binitems.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trash/templates/trash/binitems.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bins.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/trash/templates/trash/bins.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="22" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="1290">
+              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -165,17 +482,10 @@
       <list>
         <option value="Python Script" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>center</find>
-      <find>.center</find>
-      <find>parent</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -192,24 +502,26 @@
         <option value="$PROJECT_DIR$/trash/templates/trash/home.html" />
         <option value="$PROJECT_DIR$/trash/urls.py" />
         <option value="$PROJECT_DIR$/trash/admin.py" />
-        <option value="$PROJECT_DIR$/trash/static/trash/js/script.js" />
         <option value="$PROJECT_DIR$/templates/500.html" />
         <option value="$PROJECT_DIR$/templates/404.html" />
         <option value="$PROJECT_DIR$/templates/400.html" />
-        <option value="$PROJECT_DIR$/trash/templates/trash/index.html" />
-        <option value="$PROJECT_DIR$/Hmr/settings.py" />
-        <option value="$PROJECT_DIR$/trash/models.py" />
-        <option value="$PROJECT_DIR$/trash/templates/trash/additem.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/trash/templates/trash/bins.html" />
-        <option value="$PROJECT_DIR$/dump_db/insert/hmr_db_public_trash_trashitem.sql" />
+        <option value="$PROJECT_DIR$/trash/models.py" />
+        <option value="$PROJECT_DIR$/trash/templates/trash/index.html" />
         <option value="$PROJECT_DIR$/trash/templates/trash/searchresult.html" />
-        <option value="$PROJECT_DIR$/trash/templates/trash/binitems.html" />
-        <option value="$PROJECT_DIR$/trash/views.py" />
-        <option value="$PROJECT_DIR$/Hmr/urls.py" />
-        <option value="$PROJECT_DIR$/trash/templates/trash/base.html" />
-        <option value="$PROJECT_DIR$/trash/templates/trash/aboutus.html" />
+        <option value="$PROJECT_DIR$/trash/templates/trash/additem.html" />
         <option value="$PROJECT_DIR$/trash/static/trash/css/mystyles.css" />
+        <option value="$PROJECT_DIR$/trash/templates/trash/binitems.html" />
+        <option value="$PROJECT_DIR$/trash/static/trash/js/script.js" />
+        <option value="$PROJECT_DIR$/Hmr/urls.py" />
+        <option value="$PROJECT_DIR$/trash/static/trash/json/Roskikset_geojson.geojson" />
+        <option value="$PROJECT_DIR$/trash/views.py" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/Hmr/settings.py" />
+        <option value="$PROJECT_DIR$/trash/templates/trash/base.html" />
+        <option value="$PROJECT_DIR$/trash/templates/trash/maps.html" />
+        <option value="$PROJECT_DIR$/trash/static/trash/js/cake.js" />
       </list>
     </option>
   </component>
@@ -222,7 +534,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="729" />
+    <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -242,7 +554,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -291,108 +602,33 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="trash" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hmr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Hmr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Development of Web Applications and Web Services/Project/Yaas" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="PostgreSQL" />
-    <property name="js.eslint.eslintPackage" value="" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/trash/static/trash/images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/trash/static/trash/images" />
       <recent name="$PROJECT_DIR$/trash/static/trash/js" />
+      <recent name="$PROJECT_DIR$/trash/static/trash/images" />
       <recent name="$PROJECT_DIR$/trash/templates/trash" />
       <recent name="$PROJECT_DIR$/templates" />
       <recent name="$PROJECT_DIR$/trash/static/trash" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/trash/static/trash/images" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.Hmr">
@@ -414,12 +650,6 @@
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -451,23 +681,6 @@
       <module name="Hmr" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="ADDITIONAL_ARGS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="Hmr" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="host" value="127.0.0.1" />
-      <option name="browserUrl" value="" />
-      <option name="additionalOptions" value="" />
       <method />
     </configuration>
     <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
@@ -657,7 +870,7 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="Hmr.settings" />
       </envs>
-      <option name="SDK_HOME" value="/Library/Frameworks/Python.framework/Versions/3.6/bin/python3.6" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -699,39 +912,30 @@
       <configuration name="Test: " configurationId="DjangoTestsConfigurationType" />
     </history-entry>
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="729" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="728" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2515625" sideWeight="0.4937888" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.221875" sideWeight="0.4937888" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2578125" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2584814" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3212121" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1736672" sideWeight="0.50621116" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42349306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="manage.py@Hmr" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32575756" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@Hmr" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919255" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766616" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42349306" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -753,11 +957,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/trash/views.py</url>
-          <line>43</line>
+          <line>42</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="14" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
@@ -766,16 +970,14 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/trash/static/trash/js/services.js" />
-    <entry file="file://$PROJECT_DIR$/trash/static/trash/js/jquery-3.1.1.min.js">
+    <entry file="file://$PROJECT_DIR$/trash/templates/trash/header.html" />
+    <entry file="file://$PROJECT_DIR$/trash/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trash/templates/trash/home.html" />
-    <entry file="file://$PROJECT_DIR$/trash/templates/trash/header.html" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/views/generic/base.py" />
     <entry file="file://$PROJECT_DIR$/trash/admin.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -784,8 +986,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trash/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="dbDummy://dbtable:/ef068b2f/4c9c53f5-3792-4477-9d83-1051da0cd61a/hmr_db.public.trash_trashbin" />
-    <entry file="file://$PROJECT_DIR$/trash/static/trash/js/script.js" />
     <entry file="file://$PROJECT_DIR$/Hmr/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -822,6 +1030,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trash/static/trash/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="81273" lean-forward="false" selection-start-line="10" selection-start-column="81273" selection-end-line="10" selection-end-column="81273" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trash/static/trash/bower_components/angular-ui-router/release/angular-ui-router.js" />
     <entry file="file://$PROJECT_DIR$/trash/static/trash/bower_components/bootstrap/dist/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -843,194 +1058,174 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trash/static/trash/js/cake.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trash/static/trash/bower_components/bootstrap/dist/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="5226" column="1" lean-forward="false" selection-start-line="5226" selection-start-column="1" selection-end-line="5226" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/contrib/staticfiles/utils.py" />
     <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/rest_framework/static/rest_framework/css/bootstrap.min.css" />
-    <entry file="file://$PROJECT_DIR$/trash/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="38" column="48" lean-forward="false" selection-start-line="38" selection-start-column="48" selection-end-line="38" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logo.jpeg" />
     <entry file="dbDummy://dbtable:/ef068b2f/4c9c53f5-3792-4477-9d83-1051da0cd61a/hmr_db.public.trash_trashmaterial" />
-    <entry file="dbDummy://dbtable:/ef068b2f/4c9c53f5-3792-4477-9d83-1051da0cd61a/hmr_db.public.trash_trashitem" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dump_db/hmr_db_public_trash_trashbin.sql" />
     <entry file="file://$PROJECT_DIR$/dump_db/hmr_db_public_trash_trashitem.sql" />
-    <entry file="file://$PROJECT_DIR$/dump_db/hmr_db_public_auth_group.sql" />
-    <entry file="file://$PROJECT_DIR$/dump_db/hmr_db_public_auth_permission.sql" />
-    <entry file="file://$PROJECT_DIR$/Hmr/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="129" column="53" lean-forward="false" selection-start-line="129" selection-start-column="53" selection-end-line="129" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dump_db/insert/hmr_db_public_auth_group.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/5d4ffaaf/4c9c53f5-3792-4477-9d83-1051da0cd61a/hmr_db.public.trash_trashitem">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dump_db/insert/hmr_db_public_trash_trashitem.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="3" column="120" lean-forward="true" selection-start-line="3" selection-start-column="120" selection-end-line="3" selection-end-column="120" />
+        <state relative-caret-position="180">
+          <caret line="3" column="56" lean-forward="false" selection-start-line="3" selection-start-column="56" selection-end-line="3" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dump_db/insert/hmr_db_public_trash_trashbin.sql">
+    <entry file="file://$PROJECT_DIR$/dump_db/hmr_db_public_auth_group.sql" />
+    <entry file="file://$PROJECT_DIR$/dump_db/hmr_db_public_auth_permission.sql" />
+    <entry file="dbDummy://dbtable:/ef068b2f/4c9c53f5-3792-4477-9d83-1051da0cd61a/hmr_db.public.trash_trashitem" />
+    <entry file="file://$PROJECT_DIR$/trash/static/trash/js/cake_calculate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="76">
+          <caret line="237" column="23" lean-forward="false" selection-start-line="237" selection-start-column="23" selection-end-line="237" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dump_db/insert/hmr_db_public_trash_trashmaterial.sql">
+    <entry file="file://$PROJECT_DIR$/trash/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="26" column="43" lean-forward="false" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trash/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="27" lean-forward="true" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trash/__init__.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trash/templates/trash/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="23" lean-forward="false" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trash/static/trash/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="10" column="86354" lean-forward="false" selection-start-line="10" selection-start-column="86348" selection-end-line="10" selection-end-column="86354" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trash/templates/trash/aboutus.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="78" lean-forward="false" selection-start-line="25" selection-start-column="78" selection-end-line="25" selection-end-column="78" />
-          <folding>
-            <element signature="e#114#160#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trash/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="4" />
-          <folding />
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trash/templates/trash/searchresult.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="48" lean-forward="false" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
+        <state relative-caret-position="150">
+          <caret line="10" column="66" lean-forward="false" selection-start-line="10" selection-start-column="66" selection-end-line="10" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trash/templates/trash/additem.html">
+    <entry file="file://$PROJECT_DIR$/trash/templates/trash/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="87" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="87" />
-          <folding>
-            <element signature="e#114#160#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="70">
+          <caret line="20" column="48" lean-forward="false" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trash/templates/trash/base.html">
+    <entry file="file://$PROJECT_DIR$/trash/static/trash/js/script.js" />
+    <entry file="file://$PROJECT_DIR$/trash/templates/trash/binitems.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="89" lean-forward="false" selection-start-line="44" selection-start-column="89" selection-end-line="44" selection-end-column="89" />
+        <state relative-caret-position="225">
+          <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trash/templates/trash/bins.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="14" selection-end-column="22" />
-          <folding />
+        <state relative-caret-position="90">
+          <caret line="8" column="41" lean-forward="false" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
+          <folding>
+            <element signature="e#115#162#0#HTML" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trash/templates/trash/binitems.html">
+    <entry file="file://$PROJECT_DIR$/trash/static/trash/bower_components/bootstrap/dist/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="45" lean-forward="false" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        <state relative-caret-position="206">
+          <caret line="2581" column="1" lean-forward="false" selection-start-line="2581" selection-start-column="1" selection-end-line="2581" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trash/templates/trash/additem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="38" lean-forward="false" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/trash/static/trash/css/mystyles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="244" column="15" lean-forward="false" selection-start-line="244" selection-start-column="15" selection-end-line="244" selection-end-column="15" />
+        <state relative-caret-position="435">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trash/static/trash/js/proj4.js" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_proj4js_2.3.15_proj4.js" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_proj4js_2.3.15_proj4-src.js" />
+    <entry file="file://$PROJECT_DIR$/trash/static/trash/json/Roskikset_geojson.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11565">
+          <caret line="6" column="280" lean-forward="false" selection-start-line="6" selection-start-column="242" selection-end-line="6" selection-end-column="280" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="false" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hmr/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1935">
+          <caret line="129" column="53" lean-forward="false" selection-start-line="129" selection-start-column="53" selection-end-line="129" selection-end-column="53" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Hmr/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="26" column="67" lean-forward="false" selection-start-line="26" selection-start-column="67" selection-end-line="26" selection-end-column="67" />
+        <state relative-caret-position="210">
+          <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding>
             <element signature="e#637#678#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/trash/templates/trash/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1290">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trash/static/trash/js/cake.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="84" column="0" lean-forward="false" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/trash/templates/trash/maps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/trash/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1110">
-          <caret line="87" column="0" lean-forward="true" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="166">
+          <caret line="102" column="0" lean-forward="true" selection-start-line="102" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

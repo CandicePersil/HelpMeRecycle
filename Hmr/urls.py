@@ -27,4 +27,5 @@ urlpatterns = [
     url(r'^aboutus/$', trash.views.AboutUs.as_view(), name='aboutus'),
     url(r'^bin/(\w+)/$', trash.views.show_binitems, name='show_binitems'),
     url(r'^search/$', trash.views.search, name='search'),
+    url(r'^map/$', trash.views.openmap, name='openmap'),
 ]

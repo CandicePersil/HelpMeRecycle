@@ -3,7 +3,7 @@ var takePicture = document.getElementById("take-picture");
 var canvas = document.createElement("canvas");
 var codeType = document.getElementById("code-type");
 var codeContent = document.getElementById("code-content");
-var pathFound='search/?criteria=';
+var pathFound='search/?criteria=scnr';
 
 function scan() {
   if (typeof MozActivity !== 'undefined') {
@@ -37,6 +37,7 @@ takePicture.onchange = function (event) {
 }
 
 function loadImage(imgURL) {
+    // process the user taken picture
   // clean
   codeType.textContent = '';
   codeContent.value = '';
@@ -77,7 +78,7 @@ function loadImage(imgURL) {
 
   img.src = imgURL;
 
-};
+}
 
 
 
