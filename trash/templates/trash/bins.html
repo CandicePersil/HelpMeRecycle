@@ -7,49 +7,59 @@
     <div style="margin-top:120px; padding-bottom:100px;">
         <div class="container-fluid">
             <div class="row row-content">
-
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-lg-offset-3">
-                    <a href="{% url 'show_binitems' 'paper' %}"><div class="round bin_center" id="Paper">
+{% load static %}
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-lg-offset-2">
+                    <a href="{% url 'show_binitems' 'paper' %}"><!--<div class="round bin_center" id="Paper">
                         <div class="bin_title"><h3>Paper</h3></div>
-                    </div></a>
+                    </div>-->
+                    <div class="trash_bin"><img src="{% static 'trash/images/paper1.png' %}"><h3>Paper</h3></div></a>
                 </div>
-
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
-                    <a href="{% url 'show_binitems' 'metal' %}"><div class="round bin_center" id="Metal">
-                        <div class="bin_title"><h3>Metal</h3></div>
-                    </div></a>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="{% url 'show_binitems' 'carton' %}"><!--<div class="round bin_center" id="Carton">
+                        <div class="bin_title"><h3>Carton</h3></div>
+                    </div>-->
+                    <div class="trash_bin"><img src="{% static 'trash/images/carton.png' %}"><h3>Carton</h3></div></a>
                 </div>
-
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
-                    <a href="{% url 'show_binitems' 'glass' %}"><div class="round bin_center" id="Glass">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="{% url 'show_binitems' 'glass' %}"><!--<div class="round bin_center" id="Glass">
                         <div class="bin_title"><h3>Glass</h3></div>
-                    </div></a>
+                    </div>-->
+                    <div class="trash_bin"><img src="{% static 'trash/images/glass1.png' %}"><h3>Glass</h3></div></a>
                 </div>
 
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2 col-lg-offset-2">
-                    <a href="{% url 'show_binitems' 'burnable' %}"><div class="round bin_center" id="Burnable">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="{% url 'show_binitems' 'burnable' %}"><!--<div class="round bin_center" id="Burnable">
                         <div class="bin_title"><h3>Burnable</h3></div>
-                    </div></a>
+                    </div>-->
+                    <div class="trash_bin"><img src="{% static 'trash/images/burnable1.png' %}"><h3>Burnable</h3></div></a>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2 col-lg-offset-2">
+                    <a href="{% url 'show_binitems' 'metal' %}"><!--<div class="round bin_center" id="Metal">
+                        <div class="bin_title"><h3>Metal</h3></div>
+                    </div>-->
+                    <div class="trash_bin"><img src="{% static 'trash/images/metal1.png' %}"><h3>Metal</h3></div></a>
                 </div>
 
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
-                    <a href="{% url 'show_binitems' 'plastic' %}"><div class="round bin_center" id="Plastic">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="{% url 'show_binitems' 'plastic' %}"><!--<div class="round bin_center" id="Plastic">
                         <div class="bin_title center"><h3>Plastic</h3></div>
-                    </div></a>
+                    </div>-->
+                    <div class="trash_bin"><img src="{% static 'trash/images/plastic1.png' %}"><h3>Plastic</h3></div></a>
                 </div>
 
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
-                    <a href="{% url 'show_binitems' 'bio' %}"><div class="round bin_center" id="Bio">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <a href="{% url 'show_binitems' 'bio' %}"><!--<div class="round bin_center" id="Bio">
                         <div class="bin_title"><h3>Bio</h3></div>
-                    </div></a>
+                    </div>-->
+                    <div class="trash_bin"><img src="{% static 'trash/images/bio1.png' %}"><h3>Bio</h3></div></a>
                 </div>
 
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-2">
-                    <a href="{% url 'show_binitems' 'electronics' %}"><div class="round bin_center" id="Electronics">
+                <div class="col-xs-6 col-sm-4 col-md-3 col-lg-2">
+                    <a id="fuuu" href="{% url 'show_binitems' 'electronics' %}"><!--<div class="round bin_center" id="Electronics">
                         <div class="bin_title"><h3>Electronics</h3></div>
-                    </div></a>
+                    </div>-->
+                    <div class="trash_bin"><img src="{% static 'trash/images/electronics1.png' %}"><h3>Electronics</h3></div></a>
                 </div>
-
             </div>
         </div>
     </div>

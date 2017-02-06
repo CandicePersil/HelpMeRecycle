@@ -51,8 +51,20 @@ html, body {
     }
 }
 
-a#login:hover, a#login:focus  {
+
+
+a, a:hover, a:focus, a:visited {
+    color: #2c8d3a;
+}
+
+a#login:hover, a#login:focus, a#aboutus:hover, a#aboutus:focus {
     background-color: #2c8d3a;
+    color: #FFF;
+    text-decoration: none;
+}
+
+#scan a {
+    color: #FFF;
 }
 
 .crop-img{
@@ -91,6 +103,7 @@ button.navbar-toggle.collapsed,.navbar-default .navbar-collapse, .navbar-default
 
 .bottom-btn {
     border-radius: 0;
+    border-left: 1px solid green;
     margin: 0;
     padding: 7px;
     width: 100%;
@@ -110,7 +123,7 @@ div.col-xs-4.col-md-4 {
     font-family: 'Graphik Web','Arial','Helvetica',sans-serif;
 }
 
-button a, button a:hover {
+button a, button a:hover{
     color: #FFF;
 }
 
@@ -190,11 +203,14 @@ p {
 #Bio::after, .bio {
     background-color: brown; 
 }
-#Plastic::after, .plastic {
+#Carton::after, .carton {
     background-color: #ffcf3f; 
 }
 #Electronics::after, .electronics {
     background-color: orange;
+}
+#Plastic::after, .plastic {
+    background-color: darkblue;
 }
 
 .parent {
@@ -235,6 +251,16 @@ p {
 .messages {
     list-style-type: none;
     text-align: center;
+}
+.trash_bin {
+    text-align: center;
+}
+.trash_bin h3 {
+    margin-top: 4px;
+}
+.trash_bin img {
+    max-width: 80%;
+    max-height: 80%;
 }
 
 
