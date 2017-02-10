@@ -8,18 +8,18 @@
         <div class="container-fluid">
             <div class="row row-content">
                 <div class="col-xs-4 col-sm-4 col-sm-offset-2 col-md-4 col-lg-2 col-lg-offset-3">
-                    <a href="{% url 'show_binitems' 'paper' %}"><!--<div class="round bin_center" id="Paper">
+                    <a href="{% url 'show_binitems' bin.name %}"><!--<div class="round bin_center" id="Paper">
                         <div class="bin_title"><h3>Paper</h3></div>
                     </div>-->
-                    <div class="trash_bin"><img src="{% static 'trash/images/paper1.png' %}"><h3>Paper</h3></div></a>
+                    <div class="trash_bin"><img src="{% static bin.avatar_name %}"><h3>{{ bin.name | capfirst }}</h3></div></a>
                 </div>
                 <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
                     <p>
-                        <strong>General color in Finland:</strong> Blue <br>
-                        <strong>Where bin generally found:</strong> Near houses <br>
-                        <strong>State of items:</strong> Dry and clean<br>
-                        <strong>Items included: </strong> Newspaper, magazines, advertisements, flyers, envelopes, etc.<br>
-                        <strong>Items not included: </strong> Wet and very dirty paper<br>
+                        <strong>General color in Finland:</strong> {{ bin.color | capfirst }} <br>
+                        <strong>Where bin generally found:</strong> {{ bin.common_location | capfirst }} <br>
+                        <strong>State of items:</strong> {{ bin.state_of_items | capfirst }} <br>
+                        <strong>Items included: </strong> {{ bin.description | capfirst }}<br>
+                        <strong>Items not included: </strong> {{ bin.not_included | capfirst }} <br>
                     </p>
                 </div>
             </div>

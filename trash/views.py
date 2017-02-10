@@ -1,14 +1,8 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render
 from django.urls import reverse
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from django.utils.decorators import method_decorator
-from django.contrib.auth.decorators import login_required
 from django.views import View
-from django.utils import timezone
-from django.core.mail import send_mail
-from django.conf import settings
-from django.utils import translation
 from django.db.models import Q
 import os
 import json
@@ -16,6 +10,7 @@ import requests
 from .models import *
 
 COMMON_ERROR_MESSAGE = "An error has occurred."
+NOT_FOUND_TRASH_BIN = "The trash bin is not existing."
 ADD_ITEM_SUCCESSFULLY_MESSAGE = "Item has been added successfully."
 SUCCESS_CSS_TAGS = "alert alert-success"
 ERROR_CSS_TAGS = "alert alert-danger"
@@ -65,10 +60,11 @@ def show_binitems(request, bin_name):
     try:
         bin = TrashBin.objects.get(name=bin_name.lower())
     except TrashBin.DoesNotExist:
-        messages.add_message(request, messages.ERROR, COMMON_ERROR_MESSAGE, extra_tags=ERROR_CSS_TAGS)
+        messages.add_message(request, messages.ERROR, NOT_FOUND_TRASH_BIN, extra_tags=ERROR_CSS_TAGS)
+        return HttpResponseRedirect(reverse("index"))
     else:
         items = TrashItem.objects.filter(bin=bin)
-        return render(request, "trash/binitems.html", {"items": items})
+        return render(request, "trash/binitems.html", {"bin": bin, "items": items})
 
 
 def search(request):  # search item by title or bar code number
@@ -79,17 +75,17 @@ def search(request):  # search item by title or bar code number
     elif (request.GET["criteria"] != "") & (request.GET["criteria"] != NOT_FOUND_BAR_CODE):
         # searching item
         criteria = request.GET["criteria"].lower().strip()
-        if(criteria[:4]=="scnr"):
+        if criteria[:4] == "scnr":
             result = TrashItem.objects.filter(Q(name__contains=criteria[4:]) | Q(sc_code__contains=criteria[4:])).order_by(
                 "bin__name")
         else:
             result = TrashItem.objects.filter(Q(name__contains=criteria) | Q(sc_code__contains=criteria)).order_by("bin__name")
         # if the scanned number was not found go directly to the add page and show a message there
-        if((criteria[:4]=="scnr") & (not result.count())):
+        if (criteria[:4] == "scnr") & (not result.count()):
             criteria = criteria[4:]
             return HttpResponseRedirect("/additem/?scnf="+criteria)
 
-        elif((criteria[:4]=="scnr") & (result.count())):
+        elif (criteria[:4] == "scnr") & (result.count()):
             criteria = criteria[4:]
 
     else:

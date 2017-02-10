@@ -1,0 +1,323 @@
+[
+{
+    "model": "trash.trashmaterial",
+    "pk": "6df88f08-e936-4a7e-89f3-c0466ee0fdb2",
+    "fields": {
+        "name": "Bronze",
+        "description": "bronze",
+        "created_date": "2016-11-05T22:05:17.808Z"
+    }
+},
+{
+    "model": "trash.trashmaterial",
+    "pk": "71799597-9a2d-41f3-9729-a2b2b524b576",
+    "fields": {
+        "name": "Wood",
+        "description": "wood",
+        "created_date": "2016-11-22T08:35:32.896Z"
+    }
+},
+{
+    "model": "trash.trashmaterial",
+    "pk": "a96f7a47-293e-40d1-ada4-bc819abf9d62",
+    "fields": {
+        "name": "Plastic",
+        "description": "plastic",
+        "created_date": "2016-11-22T08:35:43.737Z"
+    }
+},
+{
+    "model": "trash.trashmaterial",
+    "pk": "fe710014-c384-42b0-9331-c060da17a01d",
+    "fields": {
+        "name": "Fabric",
+        "description": "fabric",
+        "created_date": "2016-11-22T08:36:31.679Z"
+    }
+},
+{
+    "model": "trash.trashbin",
+    "pk": "14ff55f5-75ae-4844-8165-3ccb19e5ead3",
+    "fields": {
+        "name": "metal",
+        "description": "cans, metal things...",
+        "color": "grey",
+        "created_date": "2016-11-21T23:13:36.723Z",
+        "trash_loc": null
+    }
+},
+{
+    "model": "trash.trashbin",
+    "pk": "3d5b736d-3b65-4f05-8dcd-633ece91f0ef",
+    "fields": {
+        "name": "paper",
+        "description": "papers, books, notes...",
+        "color": "green",
+        "created_date": "2016-11-21T23:10:52.891Z",
+        "trash_loc": null
+    }
+},
+{
+    "model": "trash.trashbin",
+    "pk": "7ed5f507-e4f6-4b18-91c9-1b760bc9692d",
+    "fields": {
+        "name": "burnable",
+        "description": "burnable things...",
+        "color": "red",
+        "created_date": "2016-11-21T23:14:39.314Z",
+        "trash_loc": null
+    }
+},
+{
+    "model": "trash.trashbin",
+    "pk": "8f5c1950-2116-4854-b1f0-f9428cef6a10",
+    "fields": {
+        "name": "glass",
+        "description": "glass things...",
+        "color": "blue",
+        "created_date": "2016-11-21T23:14:13.209Z",
+        "trash_loc": null
+    }
+},
+{
+    "model": "trash.trashbin",
+    "pk": "b2d2182a-a030-4ace-9a83-2bf59137385a",
+    "fields": {
+        "name": "electronics",
+        "description": "electronic stuffs...",
+        "color": "orange",
+        "created_date": "2016-11-21T23:15:43.296Z",
+        "trash_loc": null
+    }
+},
+{
+    "model": "trash.trashbin",
+    "pk": "d08d7947-0036-408e-9609-488d40468f81",
+    "fields": {
+        "name": "bio",
+        "description": "biodegradable waste",
+        "color": "brown",
+        "created_date": "2016-11-21T23:15:25.950Z",
+        "trash_loc": null
+    }
+},
+{
+    "model": "trash.trashbin",
+    "pk": "fa9afa6f-163d-4828-bef3-782218b17e3d",
+    "fields": {
+        "name": "plastic",
+        "description": "plastic things...",
+        "color": "yellow",
+        "created_date": "2016-11-21T23:14:56.382Z",
+        "trash_loc": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "11561897-02f6-42c1-8d5c-a657029e202c",
+    "fields": {
+        "name": "box of tea",
+        "description": "empty box of tea",
+        "material": null,
+        "bin": "3d5b736d-3b65-4f05-8dcd-633ece91f0ef",
+        "created_date": "2016-12-01T16:06:52.164Z",
+        "sc_code": "3228881075086",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "169bc070-7119-400c-8382-37097b5f2102",
+    "fields": {
+        "name": "random title",
+        "description": "This is a really long description that used to test the size of the text box of bin item to check if it fits or not, well well well. I have no idead what i am doing here. There is even more text here that makes no sense to everything but it still needs to be done.",
+        "material": null,
+        "bin": "3d5b736d-3b65-4f05-8dcd-633ece91f0ef",
+        "created_date": "2016-11-30T21:07:25.675Z",
+        "sc_code": "34321",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "2beebe89-8bb7-48a3-b91f-996570534831",
+    "fields": {
+        "name": "fancy wine glass",
+        "description": "but broken",
+        "material": null,
+        "bin": "8f5c1950-2116-4854-b1f0-f9428cef6a10",
+        "created_date": "2016-11-23T17:11:35.205Z",
+        "sc_code": "444",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "382a5517-133f-46e3-9a98-47fce6104dde",
+    "fields": {
+        "name": "papers",
+        "description": "papers",
+        "material": null,
+        "bin": "3d5b736d-3b65-4f05-8dcd-633ece91f0ef",
+        "created_date": "2016-11-23T15:47:42.028Z",
+        "sc_code": "241",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "5983e045-92cd-4297-b6d0-3357bf11d724",
+    "fields": {
+        "name": "Milk",
+        "description": "Milk",
+        "material": null,
+        "bin": "3d5b736d-3b65-4f05-8dcd-633ece91f0ef",
+        "created_date": "2016-12-02T09:48:53.923Z",
+        "sc_code": "6408430690237",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "62b8a412-f504-49e7-8b13-f3564f996db1",
+    "fields": {
+        "name": "spoon",
+        "description": "tea spoon",
+        "material": null,
+        "bin": "14ff55f5-75ae-4844-8165-3ccb19e5ead3",
+        "created_date": "2016-11-23T15:39:08.693Z",
+        "sc_code": "12345",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "90840e71-8eb7-4539-9c26-3be8599eae4b",
+    "fields": {
+        "name": "broken USB",
+        "description": "really messy broken usb",
+        "material": null,
+        "bin": "b2d2182a-a030-4ace-9a83-2bf59137385a",
+        "created_date": "2016-11-23T17:07:51.909Z",
+        "sc_code": "5555",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "9cbd3c9f-8103-46d8-8bb7-b9bacd7f4d61",
+    "fields": {
+        "name": "t-shirt",
+        "description": "ripped t shirt",
+        "material": null,
+        "bin": "7ed5f507-e4f6-4b18-91c9-1b760bc9692d",
+        "created_date": "2016-11-23T17:13:24.589Z",
+        "sc_code": "4321",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "a722217f-a91b-4695-98c6-bb44f2a4a415",
+    "fields": {
+        "name": "left-over food",
+        "description": "any kind of food",
+        "material": null,
+        "bin": "d08d7947-0036-408e-9609-488d40468f81",
+        "created_date": "2016-11-23T17:09:14.571Z",
+        "sc_code": "6666",
+        "item_img": ""
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "ac3d2b90-5a7a-4951-b100-96fa09394512",
+    "fields": {
+        "name": "wooden chair",
+        "description": "high quality wooden chair",
+        "material": null,
+        "bin": "7ed5f507-e4f6-4b18-91c9-1b760bc9692d",
+        "created_date": "2016-11-25T09:51:14.991Z",
+        "sc_code": "3232",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "c056946f-b059-4d0d-affa-a41fb781cef7",
+    "fields": {
+        "name": "jar of fruits",
+        "description": "jar of fruits made of glass",
+        "material": null,
+        "bin": "8f5c1950-2116-4854-b1f0-f9428cef6a10",
+        "created_date": "2016-12-01T18:37:32.157Z",
+        "sc_code": "20340278",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "c5e97c35-a895-4023-b8ed-d77e95850a47",
+    "fields": {
+        "name": "instant noodles",
+        "description": "instant noodles",
+        "material": null,
+        "bin": "fa9afa6f-163d-4828-bef3-782218b17e3d",
+        "created_date": "2016-12-01T16:26:55.403Z",
+        "sc_code": "20045388",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "c9c4dcef-1323-45ce-bb4b-d012b84266e2",
+    "fields": {
+        "name": "a box of doom",
+        "description": "a box",
+        "material": null,
+        "bin": "14ff55f5-75ae-4844-8165-3ccb19e5ead3",
+        "created_date": "2016-11-23T16:01:43.406Z",
+        "sc_code": "444",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "caea2771-5991-4bf5-a561-af227266b0f4",
+    "fields": {
+        "name": "Plant",
+        "description": "Vegetation",
+        "material": null,
+        "bin": "d08d7947-0036-408e-9609-488d40468f81",
+        "created_date": "2016-12-02T09:52:35.952Z",
+        "sc_code": "34556io8864",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "cfdf07ee-4bfd-484d-95df-ae21c2690d45",
+    "fields": {
+        "name": "sprayer",
+        "description": "sprayer made of metal",
+        "material": null,
+        "bin": "14ff55f5-75ae-4844-8165-3ccb19e5ead3",
+        "created_date": "2016-12-01T18:41:58.182Z",
+        "sc_code": "3607343086332",
+        "item_img": null
+    }
+},
+{
+    "model": "trash.trashitem",
+    "pk": "f804e426-12fc-425e-afe1-60d227ec9685",
+    "fields": {
+        "name": "Plant",
+        "description": "Vegetation",
+        "material": null,
+        "bin": "d08d7947-0036-408e-9609-488d40468f81",
+        "created_date": "2016-12-02T09:52:39.159Z",
+        "sc_code": "34556io8864",
+        "item_img": null
+    }
+}
+]

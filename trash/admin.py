@@ -9,7 +9,7 @@ class TrashItemAdmin(admin.ModelAdmin):
 
 
 class TrashBinAdmin(admin.ModelAdmin):
-    list_display = ("name", "description", "color")
+    list_display = ("name", "description", "color", "avatar_name")
 
 admin.site.register(TrashItem, TrashItemAdmin)
 admin.site.register(TrashBin, TrashBinAdmin)

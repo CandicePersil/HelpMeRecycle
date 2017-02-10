@@ -28,6 +28,10 @@ class TrashBin(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     # optional foreign key for open data trashbin locations
     trash_loc = models.ForeignKey(TrashGeoLoc, on_delete=models.CASCADE, blank=True, null=True)
+    common_location = models.CharField(max_length=256, null=True, blank=True)
+    state_of_items = models.CharField(max_length=256, null=True, blank=True)
+    not_included = models.CharField(max_length=256, null=True, blank=True)
+    avatar_name = models.CharField(max_length=128, null=True, blank=True)
 
     def __str__(self):
         return self.name
