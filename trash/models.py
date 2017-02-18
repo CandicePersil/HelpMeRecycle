@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 import uuid
 
 
@@ -49,6 +50,14 @@ class TrashItem(models.Model):
     sc_code = models.CharField(max_length=2058, default=None)
     # optional image file for image recognition
     item_img = models.BinaryField(default=None, null=True, blank=True)
+    total_rating = models.IntegerField(default=0)
 
     def __str__(self):
         return self.name
+
+
+class ItemRating(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    item = models.ForeignKey(TrashItem, on_delete=models.CASCADE, null=True, blank=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
+    rate = models.IntegerField(default=0)

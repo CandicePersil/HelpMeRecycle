@@ -5,6 +5,47 @@ var codeType = document.getElementById("code-type");
 var codeContent = document.getElementById("code-content");
 var pathFound='search/?criteria=scnr';
 
+var csrftoken = $.cookie('csrftoken');
+
+function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+}
+
+$.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+            xhr.setRequestHeader("X-CSRFToken", csrftoken);
+        }
+    }
+});
+
+$('.itemMediaForm').on('submit', function(event){
+    event.preventDefault();
+    var $form = $(this);
+
+    var fields = $form.serializeArray().reduce(function(obj, item) {
+        obj[item.name] = item.value;
+        return obj;
+    }, {});
+
+    $.ajax({
+        url: "/rate/",
+        type: "POST",
+        data: {"item_id": fields["item_id"], "bin_name": fields["bin_name"]},
+        dataType: "json",
+        success: function (result) {
+            $form.find("span.rating").text(result["total_rating"]);
+            if ($form.find("a.rateButton").hasClass("voteThumb")) {
+                $form.find("a.rateButton").removeClass("voteThumb");
+            }
+            else  {
+                $form.find("a.rateButton").addClass("voteThumb");
+            }
+        }
+    });
+});
+
 function scan() {
   if (typeof MozActivity !== 'undefined') {
     // in Firefox OS v1.0.1, input[file] does not work, using Web Activities
@@ -79,6 +120,3 @@ function loadImage(imgURL) {
   img.src = imgURL;
 
 }
-
-
-

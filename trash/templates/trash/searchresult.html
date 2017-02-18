@@ -30,22 +30,35 @@
                 {% for i in items %}
 
                     <div class="media">
-                        <a class="media-left" href="#">
-                            <img class="media-object crop-img" src="{% static 'trash/images/' %}{{ i.bin.name }}.png" alt="{{ i.bin.name }}">
-                        </a>
-                        <div class="media-body">
-                            <div class="media-heading">
-                                <h3>
-                                    {{ i.name | capfirst | truncatechars:16 }}
-                                    <div style="float:right;">
-                                        <span class="label {{ i.bin.name }}" style="margin-right:10px;">{{ i.bin.name | capfirst }}</span>
-                                        <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-                                        <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
-                                    </div>
-                                </h3>
+                        <form class="itemMediaForm" id="form{{ i.id }}" role="form" method="POST">
+                            {% csrf_token %}
+                            <a class="media-left">
+                                <img class="media-object crop-img" src="{% static 'trash/images/' %}{{ i.bin.name }}.png" alt="{{ i.bin.name }}">
+                            </a>
+                            <div class="media-body">
+                                <div class="media-heading">
+                                    <h3>
+                                        {{ i.name | capfirst | truncatechars:16 }}
+                                        <div style="float:right;">
+                                            <span class="label {{ i.bin.name }}" style="margin-right:10px;">{{ i.bin.name | capfirst }}</span>
+                                            <span class="rating">{{ i.total_rating }}</span>
+                                            {% if user.is_authenticated %}
+                                                {% if i.voted == "yes" %}
+                                                    <a class="glyphicon glyphicon-thumbs-up rateButton" href="javascript:$('#form{{ i.id }}').submit()"></a>
+                                                {% else %}
+                                                    <a class="glyphicon glyphicon-thumbs-up rateButton voteThumb" href="javascript:$('#form{{ i.id }}').submit()"></a>
+                                                {% endif %}
+                                            {% else %}
+                                                <a class="glyphicon glyphicon-thumbs-up rateButton voteThumb"></a>
+                                            {% endif %}
+                                            <input type="hidden" name="item_id" value="{{ i.id }}">
+                                            <input type="hidden" name="bin_name" value="{{ i.bin.name }}">
+                                        </div>
+                                    </h3>
+                                </div>
+                                <p style="margin-top: 40px">{{ i.description | capfirst | truncatechars:150 }}</p>
                             </div>
-                            <p style="margin-top: 40px">{{ i.description | capfirst | truncatechars:150 }}</p>
-                        </div>
+                        </form>
                     </div>
 
                 {% empty %}

@@ -28,4 +28,8 @@ urlpatterns = [
     url(r'^bin/(\w+)/$', trash.views.show_binitems, name='show_binitems'),
     url(r'^search/$', trash.views.search, name='search'),
     url(r'^map/$', trash.views.openmap, name='openmap'),
+    url(r'^login/$', trash.views.LogIn.as_view(), name='login'),
+    url(r'^logout/$', trash.views.logout, name='logout'),
+    url(r'^register/$', trash.views.Register.as_view(), name='register'),
+    url(r'^rate/$', trash.views.rate, name='rate')
 ]

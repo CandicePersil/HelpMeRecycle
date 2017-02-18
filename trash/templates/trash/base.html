@@ -11,6 +11,7 @@
         <!-- Bootstrap -->
     {% load static %}
     <script src="{% static 'trash/js/jquery-3.1.1.min.js' %}"></script>
+    <script src="{% static 'trash/js/jquery.cookie.js' %}"></script>
     <link href="{% static 'trash/bower_components/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
     <link href="{% static 'trash/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'trash/css/bootstrap-social.css' %}" rel="stylesheet">
@@ -39,9 +40,15 @@
 
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a class="nav_right_link" id="login"  href="{% url 'index' %}">
-                            <span class="glyphicon glyphicon-log-in"></span> Login</a>
-                        </li>
+                        {% if user.is_authenticated %}
+                            <li><a class="nav_right_link" id="logout"  href="{% url 'logout' %}">
+                                <span class="glyphicon glyphicon-log-out"></span> Logout</a>
+                            </li>
+                        {% else %}
+                            <li><a class="nav_right_link" id="login"  href="{% url 'login' %}">
+                                <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                            </li>
+                        {% endif %}
 
                         <li><a class="nav_right_link" id="aboutus"  href="{% url 'aboutus' %}">
                             <span class="glyphicon glyphicon-info-sign"></span> About us</a>
