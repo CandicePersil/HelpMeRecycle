@@ -113,7 +113,7 @@ def search(request):  # search item by title or bar code number
                 Q(name__contains=criteria[4:]) | Q(sc_code__contains=criteria[4:])).order_by(
                 "-total_rating", "bin__name")
         else:
-            result = TrashItem.objects.filter(Q(name__contains=criteria) | Q(sc_code__contains=criteria)).order_by(
+            result = TrashItem.objects.filter(Q(name__icontains=criteria) | Q(sc_code__contains=criteria)).order_by(
                 "-total_rating", "bin__name")
         # if the scanned number was not found go directly to the add page and show a message there
         if (criteria[:4] == "scnr") & (not result.count()):
