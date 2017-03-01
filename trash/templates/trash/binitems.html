@@ -11,7 +11,7 @@
                     <a href="{% url 'show_binitems' bin.name %}"><!--<div class="round bin_center" id="Paper">
                         <div class="bin_title"><h3>Paper</h3></div>
                     </div>-->
-                    <div class="trash_bin"><img src="{% static bin.avatar_name %}"><h3>{{ bin.name | capfirst }}</h3></div></a>
+                    <div class="trash_bin"><img src="{% static 'trash/images/' %}{{ bin.name }}1.png"><h3>{{ bin.name | capfirst }}</h3></div></a>
                 </div>
                 <div class="col-xs-8 col-sm-5 col-md-3 col-lg-4">
                     <p>
