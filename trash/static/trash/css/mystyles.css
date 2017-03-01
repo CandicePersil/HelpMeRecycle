@@ -1,27 +1,12 @@
-/* put your css code here */
-/*@media (min-width: 600px) {*/
-  /*.container {*/
-    /*width: 1300px;*/
-  /*}*/
-/*}*/
-
-html, body {
+html, body, #map {
   min-width: 320px;
+  width: 100%;
+  height: 100%;
 }
 
 @media screen and (min-width: 750px) {
     .search_input {
         width: 113%;
-        margin-left: -12px;
-    }
-
-    #Electronics div {
-        width: 30%;
-        margin-left: -15px;
-    }
-
-    #Burnable div{
-        width: 50%;
         margin-left: -12px;
     }
 }
@@ -35,26 +20,17 @@ html, body {
         margin: auto;
         top: 38%
     }
-    .bin_center div{
-        width: 38%;
-        margin: auto;
-        top: 38%
+    #map {
+        height: 400px;
     }
-
-    #Electronics div{
-        width: 50%;
-        margin-left: -10px;
-    }
-    #Burnable div{
-        width: 50%;
-        margin-left: -11px;
+    .bins_map img{
+        max-width: 80%;
     }
 }
 
-
-
 a, a:hover, a:focus, a:visited {
     color: #2c8d3a;
+    text-decoration: none;
 }
 
 a#login:hover, a#login:focus, a#logout:hover, a#logout:focus, a#aboutus:hover, a#aboutus:focus {
@@ -125,7 +101,13 @@ div.col-xs-4.col-md-4 {
 
 button a, button a:hover{
     color: #FFF;
+    text-decoration: none;
 }
+
+div a {
+    text-decoration: none;
+}
+
 
 p {
     display: block;
@@ -144,11 +126,13 @@ p {
 
 .form-control {
     border: 1px solid #058405;
-    
+    height: 40px;
 }
-.media-heading {
 
+label #sc{
+    margin-top: -11px;
 }
+
 .green_box {
     background-color: rgba(26, 174, 2, 1);
     padding: 10px;
@@ -188,31 +172,6 @@ p {
     resize: both;
 }
 
-#Paper::after, .paper {
-    background-color: green;
-}
-#Metal::after, .metal {
-    background-color: grey; 
-}
-#Glass::after, .glass {
-    background-color: skyblue; 
-}
-#Burnable::after, .burnable {
-    background-color: red; 
-}
-#Bio::after, .bio {
-    background-color: brown; 
-}
-#Carton::after, .carton {
-    background-color: #ffcf3f; 
-}
-#Electronics::after, .electronics {
-    background-color: orange;
-}
-#Plastic::after, .plastic {
-    background-color: darkblue;
-}
-
 .parent {
   position: relative;
     width:100%;
@@ -243,25 +202,31 @@ p {
     top: 40%;
 }
 
-#Electronics div {
-    width: 30%;
-    font-size: 1em;
-}
-
 .messages {
     list-style-type: none;
     text-align: center;
 }
-.trash_bin {
+.trash_bin, .bins_map {
     text-align: center;
 }
-.trash_bin h3 {
+.trash_bin h3, .bins_map h4 {
     margin-top: 4px;
 }
 .trash_bin img {
     max-width: 80%;
     max-height: 80%;
 }
+
+#map {
+    width:100%;
+    height: 678px;
+}
+
+.bins_map img {
+    padding-top: 11%;
+    max-width: 39%;
+}
+
 
 .fbbutton, .fbbutton:focus {
     background-color: rgba(10, 139, 250, 1);

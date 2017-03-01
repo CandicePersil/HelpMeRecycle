@@ -7,7 +7,7 @@
     <div style="margin-top:80px; padding-bottom:100px;">
         <div class="container-fluid">
             <div class="row row-content">
-                <div class="col-xs-12 col-sm-9 col-sm-offset-2 col-md-8 col-md-offset-2">
+                <div class="col-xs-12 col-sm-9 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <form class="form-horizontal" role="form" method="POST" enctype="multipart/form-data">
                         {% csrf_token %}
                         <fieldset>
@@ -50,18 +50,18 @@
                             </div>
 
                             <div class="form-group">
-                                <label for="id_sc_code" class="col-sm-2 control-label">Scanner code*</label>
+                                <label for="id_sc_code" class="col-sm-2 control-label" id="sc">Scanner code</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" id="id_sc_code" name="sc_code" placeholder="Enter The Scanner Code" value="{{ scanner }}" required >
+                                    <input type="text" class="form-control" id="id_sc_code" name="sc_code" placeholder="Enter The Scanner Code" value="{{ scanner }}"  >
                                 </div>
                             </div>
 
-                            <div class="form-group">
+                            <!--<div class="form-group">
                                 <label for="id_item_img" class="col-sm-2 control-label">Image</label>
                                 <div class="col-sm-10">
                                     <input id="id_item_img" name="item_img" type="file" accept="image/*;capture=camera">
                                 </div>
-                            </div>
+                            </div>-->
 
                             {# TODO: display the input file for user on pc and display camera for user on phone #}
 

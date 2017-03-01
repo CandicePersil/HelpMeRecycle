@@ -7,13 +7,13 @@
     <div style="margin-top:110px; padding-bottom:100px;">
         <div class="container-fluid">
             <div class="row row-content">
-                <div class="col-xs-4 col-sm-4 col-sm-offset-2 col-md-4 col-lg-2 col-lg-offset-3">
+                <div class="col-xs-12 col-sm-3 col-sm-offset-2 col-md-3 col-lg-2 col-lg-offset-2">
                     <a href="{% url 'show_binitems' bin.name %}"><!--<div class="round bin_center" id="Paper">
                         <div class="bin_title"><h3>Paper</h3></div>
                     </div>-->
                     <div class="trash_bin"><img src="{% static bin.avatar_name %}"><h3>{{ bin.name | capfirst }}</h3></div></a>
                 </div>
-                <div class="col-xs-8 col-sm-4 col-md-4 col-lg-4">
+                <div class="col-xs-8 col-sm-5 col-md-3 col-lg-4">
                     <p>
                         <strong>General color in Finland:</strong> {{ bin.color | capfirst }} <br>
                         <strong>Where bin generally found:</strong> {{ bin.common_location | capfirst }} <br>
@@ -21,6 +21,13 @@
                         <strong>Items included: </strong> {{ bin.description | capfirst }}<br>
                         <strong>Items not included: </strong> {{ bin.not_included | capfirst }} <br>
                     </p>
+                </div>
+                <div class="col-xs-4 col-sm-2 col-md-2 col-lg-2">
+                    <a href="{% url 'openmap' %}">
+                        <!--<button type="button" class="btn btn-success btn-lg">Bins map</button>-->
+                        <div class="bins_map"><img src="{% static 'trash/images/map.png' %}" id="map_icon">
+                        <h4>Bins map</h4></div>
+                    </a>
                 </div>
             </div>
             <div class="row row-content">
@@ -34,11 +41,7 @@
                     </div>
                 {% endif %}
 
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-
-                    <a href="{% url 'openmap' %}">
-                        <button type="button" class="btn btn-success btn-lg">Bins map</button>
-                    </a>
+                <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-8 col-md-offset-2">
 
                     {% for i in items %}
 
